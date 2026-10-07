@@ -75,6 +75,31 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
+    title: "Toronto Chapter Delivers Kits to Two Canadian Hospitals",
+    date: "May 1, 2026",
+    location: "Toronto, Canada",
+    description:
+      "Our international chapter at University of Toronto Schools, led by Maisey Zhao and Isabel Tian, delivered STEMKits to Cortellucci Vaughan Hospital and Credit Valley Hospital. Each box was hand-packed and labeled with paper rockets, pom-pom catapults, and robotic hands, along with instruction manuals and QR codes to online tutorials. We are so grateful for their continued hard work.",
+    photos: [
+      {
+        src: "/images/impact/toronto-uts-1.avif",
+        alt: "Maisey Zhao and Isabel Tian handing boxes of STEMKits to a staff member at Cortellucci Vaughan Hospital",
+      },
+      {
+        src: "/images/impact/toronto-uts-2.avif",
+        alt: "Chapter members and a hospital staff member holding labeled STEMKit boxes",
+      },
+      {
+        src: "/images/impact/toronto-uts-3.avif",
+        alt: "Labeled boxes of paper rockets, pom-pom catapults, and robotic hands next to STEM Kits instruction manuals",
+      },
+      {
+        src: "/images/impact/toronto-uts-4.avif",
+        alt: "Five hand-labeled STEMKit boxes lined up on a wooden floor",
+      },
+    ],
+  },
+  {
     title: "Recognized by the Mayor of Frisco",
     location: "Frisco, Texas",
     description:
