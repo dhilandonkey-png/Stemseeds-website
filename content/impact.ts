@@ -523,6 +523,32 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
+    title: "25+ Kits Delivered to Children's Health",
+    date: "January 2, 2025",
+    location: "Plano, Texas",
+    recipient: "Children's Health",
+    description:
+      "Thank you to Children's Health for partnering with us to deliver over 25 STEMKits to patients. A special thanks to Ms. Caso and Ms. Brame for giving us the opportunity to expand STEMSeeds' impact, with many more plans to come.",
+    photos: [
+      {
+        src: "/images/impact/childrens-first-1.avif",
+        alt: "Three STEMSeeds members and a Children's Health staff member beside a wagon of STEMKits under a holiday wreath",
+      },
+      {
+        src: "/images/impact/childrens-first-2.avif",
+        alt: "Three STEMSeeds members with a wagon of STEMKits outside the Children's Health hospital",
+      },
+      {
+        src: "/images/impact/childrens-first-3.avif",
+        alt: "A STEMSeeds member loading STEMKits into the back of an SUV",
+      },
+      {
+        src: "/images/impact/childrens-first-4.avif",
+        alt: "The Children's Health hospital entrance with a decorated holiday tree",
+      },
+    ],
+  },
+  {
     title: "Recognized by the Mayor of Frisco",
     location: "Frisco, Texas",
     description:
