@@ -4,6 +4,7 @@ import { MemberCard, SharedPhotoCard } from "@/components/about/member-card";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
 import {
+  chapterSlug,
   coreTeam,
   founders,
   groupByChapter,
@@ -51,7 +52,11 @@ function ChapterGroups({
           chapterSpan[sharesPhoto ? 4 : Math.min(group.members.length, 4)];
 
         return (
-          <div key={group.chapter} className={span.block}>
+          <div
+            key={group.chapter}
+            id={chapterSlug(group.chapter)}
+            className={`scroll-mt-28 ${span.block}`}
+          >
             <Reveal>
               <h4 className="flex items-start gap-2.5 font-display text-lg leading-snug text-foreground">
                 <span
@@ -151,7 +156,11 @@ export default function TeamPage() {
           </Reveal>
           <div className="mt-12 space-y-16">
             {usChapters.map((group) => (
-              <div key={group.state}>
+              <div
+                key={group.state}
+                id={chapterSlug(group.state)}
+                className="scroll-mt-28"
+              >
                 <Reveal>
                   <h3 className="flex items-center gap-3 text-sm font-bold tracking-[0.24em] text-primary uppercase">
                     {group.state}
@@ -181,7 +190,11 @@ export default function TeamPage() {
           </Reveal>
           <div className="mt-12 space-y-16">
             {internationalChapters.map((group) => (
-              <div key={group.country}>
+              <div
+                key={group.country}
+                id={chapterSlug(group.country)}
+                className="scroll-mt-28"
+              >
                 <Reveal>
                   <h3 className="flex items-center gap-3 text-sm font-bold tracking-[0.24em] text-primary uppercase">
                     {group.country}

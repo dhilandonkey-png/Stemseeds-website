@@ -1,8 +1,16 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
-import { CalendarDays, Hospital, MapPin, School } from "lucide-react";
+import {
+  ArrowRight,
+  CalendarDays,
+  Hospital,
+  MapPin,
+  School,
+  Users,
+} from "lucide-react";
 
 import type { ImpactEvent } from "@/content/impact";
 import { cn } from "@/lib/utils";
@@ -88,6 +96,20 @@ export function EventCard({ event }: { event: ImpactEvent }) {
         <p className="mt-4 text-base leading-relaxed text-foreground/75">
           {event.description}
         </p>
+        {event.chapter ? (
+          <Link
+            href={`/team#${event.chapter.teamId}`}
+            aria-label={`Meet the ${event.chapter.name} chapter team`}
+            className="group mt-5 inline-flex w-fit items-center gap-2 rounded-full border border-primary/20 px-4 py-2 text-sm font-semibold whitespace-nowrap text-primary transition-colors hover:bg-primary hover:text-primary-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none"
+          >
+            <Users aria-hidden="true" className="size-4" />
+            Meet the chapter
+            <ArrowRight
+              aria-hidden="true"
+              className="size-4 transition-transform group-hover:translate-x-0.5"
+            />
+          </Link>
+        ) : null}
       </div>
     </article>
   );
