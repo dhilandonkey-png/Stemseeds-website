@@ -8,6 +8,9 @@ export type ImpactEvent = {
   /** Shown as written, e.g. "March 2026" or "March 14, 2026". */
   date?: string;
   location?: string;
+  /** Hospital (or school) that received the kits. */
+  recipient?: string;
+  recipientType?: "hospital" | "school";
   description: string;
   photos: ImpactPhoto[];
 };
@@ -24,6 +27,7 @@ export const impactEvents: ImpactEvent[] = [
     title: "Argyle Chapter Delivers 100 Kits Across 6 Hospitals",
     date: "September 2026",
     location: "North Texas",
+    recipient: "Health Services of North Texas",
     description:
       "Our Argyle High School chapter, led by Shreyas Choudhary, Rohan Pasumarthi, Deva Amruthuluru, Sushanth Ganta, and Rohith Pasumarthi, assembled and delivered 100 STEMKits to Health Services of North Texas, which shared them among six hospitals. Thank you to the team for the time and effort they put into spreading STEM.",
     photos: [
@@ -41,6 +45,7 @@ export const impactEvents: ImpactEvent[] = [
     title: "Reedy High School Delivers 50 Kits to Cook Children's",
     date: "July 17, 2026",
     location: "Fort Worth, Texas",
+    recipient: "Cook Children's Medical Center",
     description:
       "Our Reedy High School chapter, led by Satvik Gundumalla, Eshan Rudravaram, Aadith Nair, Mihir Kshirsagar, and Adit Nalluri, packed and delivered 50 STEMKits to Cook Children's Medical Center in Fort Worth. Thank you to the team for the time and effort they put into bringing hands-on STEM to young patients.",
     photos: [
@@ -66,6 +71,8 @@ export const impactEvents: ImpactEvent[] = [
     title: "Bangladesh Chapter Delivers 100 Kits",
     date: "July 6, 2026",
     location: "Bangladesh",
+    recipient: "GiashUddin Model School",
+    recipientType: "school",
     description:
       "Our Bangladesh chapter, led by Miftahul Jannah Nowsheen with team members Tanha and Tahsin, delivered 100 STEMKits in partnership with GiashUddin Model School. The kits included instruction manuals translated into Bangla, bringing hands-on STEM to even more students around the world.",
     photos: [
@@ -124,6 +131,7 @@ export const impactEvents: ImpactEvent[] = [
     title: "Toronto Chapter Delivers Kits to Two Canadian Hospitals",
     date: "May 1, 2026",
     location: "Toronto, Canada",
+    recipient: "Cortellucci Vaughan Hospital & Credit Valley Hospital",
     description:
       "Our international chapter at University of Toronto Schools, led by Maisey Zhao and Isabel Tian, delivered STEMKits to Cortellucci Vaughan Hospital and Credit Valley Hospital. Each box was hand-packed and labeled with paper rockets, pom-pom catapults, and robotic hands, along with instruction manuals and QR codes to online tutorials. We are so grateful for their continued hard work.",
     photos: [
@@ -149,6 +157,7 @@ export const impactEvents: ImpactEvent[] = [
     title: "Michigan Chapter's First Delivery",
     date: "March 14, 2026",
     location: "Detroit, Michigan",
+    recipient: "Children's Hospital of Michigan",
     description:
       "Our Michigan chapter at Northville High School, led by Rishan Patel, completed its first kit drop, delivering more than 40 STEMKits to the Children's Hospital of Michigan. The team packed and sealed every box by hand, and more deliveries are on the way.",
     photos: [
@@ -178,6 +187,7 @@ export const impactEvents: ImpactEvent[] = [
     title: "Wakeland Chapter Delivers 25 Kits to Children's Health Plano",
     date: "January 20, 2026",
     location: "Plano, Texas",
+    recipient: "Children's Health Plano",
     description:
       "Our Wakeland High School chapter, led by Hasini Yalavarthi, delivered 25 STEMKits to Children's Health Plano. Each box was packed with pom-pom catapult and robotic hand experiments, plus a QR code linking to step-by-step instructions. Everyone at STEMSeeds is grateful for the time and effort the team put into spreading STEM.",
     photos: [
@@ -199,6 +209,7 @@ export const impactEvents: ImpactEvent[] = [
     title: "Argyle Chapter Delivers 75 Kits to Children's Health",
     date: "January 9, 2026",
     location: "North Texas",
+    recipient: "Children's Health",
     description:
       "Our Argyle High School chapter, led by Shreyas Choudhary, loaded up and delivered 75 STEMKits to Children's Health. Thank you to the team for the time and effort they put into bringing hands-on STEM to young patients.",
     photos: [

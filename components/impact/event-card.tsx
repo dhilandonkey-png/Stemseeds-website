@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { CalendarDays, MapPin } from "lucide-react";
+import { CalendarDays, Hospital, MapPin, School } from "lucide-react";
 
 import type { ImpactEvent } from "@/content/impact";
 import { cn } from "@/lib/utils";
@@ -71,6 +71,16 @@ export function EventCard({ event }: { event: ImpactEvent }) {
               </span>
             ) : null}
           </div>
+        ) : null}
+        {event.recipient ? (
+          <p className="mt-3 inline-flex w-fit items-start gap-2 rounded-xl bg-secondary px-3 py-1.5 text-sm font-semibold text-secondary-foreground">
+            {event.recipientType === "school" ? (
+              <School aria-hidden="true" className="mt-0.5 size-4 shrink-0" />
+            ) : (
+              <Hospital aria-hidden="true" className="mt-0.5 size-4 shrink-0" />
+            )}
+            {event.recipient}
+          </p>
         ) : null}
         <h3 className="mt-3 font-display text-2xl leading-tight font-bold text-foreground sm:text-3xl">
           {event.title}
