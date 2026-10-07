@@ -21,6 +21,23 @@ export const impactIntro = {
 /** Newest first. Add a new event by copying one block and filling it in. */
 export const impactEvents: ImpactEvent[] = [
   {
+    title: "Argyle Chapter Delivers 100 Kits Across 6 Hospitals",
+    date: "September 2026",
+    location: "North Texas",
+    description:
+      "Our Argyle High School chapter, led by Shreyas Choudhary, Rohan P., Deva A., Sushanth G., and Rohith P., assembled and delivered 100 STEMKits to Health Services of North Texas, which shared them among six hospitals. Thank you to the team for the time and effort they put into spreading STEM.",
+    photos: [
+      {
+        src: "/images/impact/argyle-1.avif",
+        alt: "Two chapter members loading a cart full of sealed STEMKit boxes",
+      },
+      {
+        src: "/images/impact/argyle-2.avif",
+        alt: "Chapter members sitting on the floor assembling kit supplies into bags",
+      },
+    ],
+  },
+  {
     title: "Reedy High School Delivers 50 Kits to Cook Children's",
     date: "July 17, 2026",
     location: "Fort Worth, Texas",
