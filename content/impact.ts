@@ -575,6 +575,10 @@ export const impactEvents: ImpactEvent[] = [
         src: "/images/impact/volleyball-5.avif",
         alt: "A player jumping to serve the volleyball",
       },
+      {
+        src: "/images/impact/volleyball-6.avif",
+        alt: "A player setting the ball at the net during a tournament match",
+      },
     ],
   },
   {
