@@ -458,6 +458,33 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
+    title: "Frisco Chapter Delivers 50+ Kits to Medical City Frisco",
+    date: "July 27, 2025",
+    location: "Frisco, Texas",
+    recipient: "Medical City Frisco",
+    chapter: { name: "Frisco High School", teamId: "frisco-high-school" },
+    description:
+      "Our Frisco High School chapter, led by Aneesh Kotvali, dropped off more than 50 STEMKits at Medical City Frisco. A special thanks to Ms. Stewart for giving us the opportunity to spark joy through our STEMKits.",
+    photos: [
+      {
+        src: "/images/impact/frisco-medcity-1.avif",
+        alt: "Chapter members and Medical City staff holding STEMKits in the Medical City Frisco lobby",
+      },
+      {
+        src: "/images/impact/frisco-medcity-2.avif",
+        alt: "Chapter members and hospital staff holding STEMKits beside a stack of boxes",
+      },
+      {
+        src: "/images/impact/frisco-medcity-3.avif",
+        alt: "Three chapter members carrying stacks of STEMKits from the car",
+      },
+      {
+        src: "/images/impact/frisco-medcity-4.avif",
+        alt: "Chapter members unloading STEMKits from the back of an SUV",
+      },
+    ],
+  },
+  {
     title: "Recognized by the Mayor of Frisco",
     location: "Frisco, Texas",
     description:
