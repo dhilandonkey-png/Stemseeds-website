@@ -83,7 +83,7 @@ export const impactEvents: ImpactEvent[] = [
     photos: [
       {
         src: "/images/impact/toronto-uts-1.avif",
-        alt: "Maisey Zhao and Isabel Tian handing boxes of STEMKits to a staff member at Cortellucci Vaughan Hospital",
+        alt: "Two chapter members and a hospital staff member holding boxes of STEMKits at Cortellucci Vaughan Hospital",
       },
       {
         src: "/images/impact/toronto-uts-2.avif",
