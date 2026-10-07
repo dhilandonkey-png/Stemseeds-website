@@ -2,7 +2,7 @@ export const site = {
   name: "STEMSeeds",
   tagline: "Where Learning Takes Root",
   description:
-    "STEMSeeds is a student-led philanthropic organization focused on bringing hands-on STEM education to children of all backgrounds, including pediatric patients and underserved communities.",
+    "STEMSeeds is a student-led nonprofit organization focused on bringing hands-on STEM education to children of all backgrounds, including pediatric patients and underserved communities.",
   instagram: {
     handle: "stemseeds.initiative",
     href: "https://www.instagram.com/stemseeds.initiative",

@@ -90,7 +90,7 @@ export function SiteFooter() {
       <div className="border-t border-mint/10 px-6 py-6">
         <p className="mx-auto max-w-6xl text-xs text-aqua/60">
           &copy; {new Date().getFullYear()} {site.name}. A student-led
-          philanthropic organization.
+          501(c)(3) nonprofit organization.
         </p>
       </div>
     </footer>
