@@ -283,6 +283,37 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
+    title: "Mansfield ECHS Chapter Delivers 75 Kits to Cook Children's",
+    date: "November 21, 2025",
+    location: "Fort Worth, Texas",
+    recipient: "Cook Children's Medical Center",
+    chapter: { name: "Mansfield ECHS", teamId: "mansfield-echs" },
+    description:
+      "Our Mansfield Early College High School chapter, led by Shahzaib Ahmed, worked together to prepare and deliver 75 STEMKits to the children at Cook Children's Medical Center in Fort Worth. We are so grateful for chapters like this one that work so diligently to spread the joy of learning.",
+    photos: [
+      {
+        src: "/images/impact/mansfield-1.avif",
+        alt: "Four chapter members holding Cook Children's thank-you signs beside carts of STEMKits",
+      },
+      {
+        src: "/images/impact/mansfield-2.avif",
+        alt: "Chapter members and a Cook Children's staff member holding STEMKit boxes",
+      },
+      {
+        src: "/images/impact/mansfield-3.avif",
+        alt: "Four chapter members holding a strip of STEMSeeds tape outside Cook Children's",
+      },
+      {
+        src: "/images/impact/mansfield-4.avif",
+        alt: "Chapter members loading STEMKit boxes from a car onto a cart",
+      },
+      {
+        src: "/images/impact/mansfield-5.avif",
+        alt: "Chapter members unloading STEMKit boxes from a car trunk",
+      },
+    ],
+  },
+  {
     title: "Recognized by the Mayor of Frisco",
     location: "Frisco, Texas",
     description:
