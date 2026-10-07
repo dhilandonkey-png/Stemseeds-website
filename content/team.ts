@@ -569,7 +569,8 @@ export const internationalChapters: {
         country: "Canada",
         bio: "Maisey Zhao is a rising junior at the University of Toronto Schools and co-president of the UTS STEMseeds chapter. A senior piano student at the Taylor Academy, she's passionate about biomedical research and has studied the effects of climate change on tropical diseases. She's earned awards in writing, science, and music and serves as Director of Medical Programs at SIMtern and National Project Director at the Project Apollo Association.",
         image: "/images/team/maisey-zhao-and-isabel-tian.avif",
-        imageAlt: "Maisey Zhao and Isabel Tian, co-presidents of the UTS chapter",
+        imageAlt:
+          "Maisey Zhao and Isabel Tian, co-presidents of the UTS chapter",
       },
       {
         name: "Isabel Tian",
@@ -578,11 +579,21 @@ export const internationalChapters: {
         country: "Canada",
         bio: "Isabel Tian is a freshman at the University of Toronto Schools and co-president of the UTS STEMseeds chapter. Passionate about medical science, she's conducted research in comparative immunology studying bat and human immune systems. She also serves on student council as an event coordinator and enjoys baking, drawing, reading, dancing, and singing.",
         image: "/images/team/maisey-zhao-and-isabel-tian.avif",
-        imageAlt: "Maisey Zhao and Isabel Tian, co-presidents of the UTS chapter",
+        imageAlt:
+          "Maisey Zhao and Isabel Tian, co-presidents of the UTS chapter",
       },
     ],
   },
 ];
+
+/** URL-friendly id for a chapter or state heading, e.g. "argyle-high-school". */
+export function chapterSlug(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
 
 export type ChapterGroup = { chapter: string; members: TeamMember[] };
 
