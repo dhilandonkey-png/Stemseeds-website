@@ -512,6 +512,10 @@ export const impactEvents: ImpactEvent[] = [
         src: "/images/impact/cook-scottish-5.avif",
         alt: "The Scottish Rite for Children building in Frisco",
       },
+      {
+        src: "/images/impact/cook-scottish-6.avif",
+        alt: "Rows of open STEMKit boxes packed with instruction manuals, QR codes, and supplies",
+      },
     ],
   },
   {
