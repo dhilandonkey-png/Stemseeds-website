@@ -230,7 +230,7 @@ export const impactEvents: ImpactEvent[] = [
   {
     title: "Argyle Chapter Delivers 75 Kits to Children's Health",
     date: "January 9, 2026",
-    location: "North Texas",
+    location: "Fort Worth, Texas",
     recipient: "Children's Health",
     chapter: { name: "Argyle High School", teamId: "argyle-high-school" },
     description:
