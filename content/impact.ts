@@ -251,6 +251,38 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
+    title: "Bangladesh Chapter Delivers 75 Kits",
+    date: "December 28, 2025",
+    location: "Narayanganj, Bangladesh",
+    recipient: "Hazi Abul Kalam School",
+    recipientType: "school",
+    chapter: { name: "Bangladesh", teamId: "bangladesh" },
+    description:
+      "Our Bangladesh chapter, led by Miftahul Jannah Nowsheen with team members Tanha and Tahsin, delivered 75 STEMKits in partnership with Hazi Abul Kalam School. We are incredibly grateful for chapters like this one that are expanding STEMSeeds across the world and inspiring curiosity where it matters most.",
+    photos: [
+      {
+        src: "/images/impact/bangladesh-dec-1.avif",
+        alt: "Three chapter members sitting beside a STEMSeeds Bangladesh box in the school courtyard",
+      },
+      {
+        src: "/images/impact/bangladesh-dec-2.avif",
+        alt: "Chapter members and a school representative standing behind a STEMSeeds Bangladesh box",
+      },
+      {
+        src: "/images/impact/bangladesh-dec-3.avif",
+        alt: "A chapter member holding a STEMSeeds Bangladesh box outside the school",
+      },
+      {
+        src: "/images/impact/bangladesh-dec-4.avif",
+        alt: "Two chapter members holding up STEMSeeds stickers",
+      },
+      {
+        src: "/images/impact/bangladesh-dec-5.avif",
+        alt: "A STEMSeeds Bangladesh box in front of a monument in the school courtyard",
+      },
+    ],
+  },
+  {
     title: "Recognized by the Mayor of Frisco",
     location: "Frisco, Texas",
     description:
