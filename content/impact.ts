@@ -427,6 +427,37 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
+    title: "STEMSeeds Goes Global: First India Drop of 100 Kits",
+    date: "August 4, 2025",
+    location: "Thiruvalla, Kerala, India",
+    recipient: "Mar Thoma Residential School",
+    recipientType: "school",
+    description:
+      "STEMSeeds completed its first international drop, delivering 100 STEMKits in India. Partnering with Mar Thoma Residential School, we delivered kits to hospitalized pediatric patients across neighboring districts. Special thanks to the school's principal, Ms. Anita Susan Varghese, for her incredible coordination and support in making this drop possible.",
+    photos: [
+      {
+        src: "/images/impact/india-1.avif",
+        alt: "A STEMSeeds member handing a STEMKit bag to principal Anita Susan Varghese",
+      },
+      {
+        src: "/images/impact/india-2.avif",
+        alt: "A STEMSeeds member beside a car trunk full of STEMKit bags outside the school",
+      },
+      {
+        src: "/images/impact/india-3.avif",
+        alt: "A car trunk packed with paper STEMKit bags",
+      },
+      {
+        src: "/images/impact/india-4.avif",
+        alt: "The front gate of Mar Thoma Residential School, Thiruvalla",
+      },
+      {
+        src: "/images/impact/india-5.avif",
+        alt: "The Mar Thoma Residential School campus surrounded by trees",
+      },
+    ],
+  },
+  {
     title: "Recognized by the Mayor of Frisco",
     location: "Frisco, Texas",
     description:
