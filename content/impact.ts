@@ -63,6 +63,35 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
+    title: "Bangladesh Chapter Delivers 100 Kits",
+    date: "July 6, 2026",
+    location: "Bangladesh",
+    description:
+      "Our Bangladesh chapter, led by Miftahul Jannah Nowsheen with team members Tanha and Tahsin, delivered 100 STEMKits in partnership with GiashUddin Model School. The kits included instruction manuals translated into Bangla, bringing hands-on STEM to even more students around the world.",
+    photos: [
+      {
+        src: "/images/impact/bangladesh-1.avif",
+        alt: "Chapter members and a school representative holding a STEMSeeds Bangladesh box",
+      },
+      {
+        src: "/images/impact/bangladesh-2.avif",
+        alt: "Two chapter members standing in front of GiashUddin Model School",
+      },
+      {
+        src: "/images/impact/bangladesh-3.avif",
+        alt: "Kit supplies with paper cups, straws, craft sticks, and Bangla instruction sheets",
+      },
+      {
+        src: "/images/impact/bangladesh-4.avif",
+        alt: "A cardboard box labeled STEMSeeds Bangladesh with the STEMSeeds logo",
+      },
+      {
+        src: "/images/impact/bangladesh-5.avif",
+        alt: "Hand-painted brain and lightbulb drawings with STEMSeeds stickers on a box",
+      },
+    ],
+  },
+  {
     title: "Reedy Chapter Pickleball Tournament",
     date: "July 5, 2026",
     location: "Frisco, Texas",
