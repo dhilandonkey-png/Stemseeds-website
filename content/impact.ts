@@ -25,7 +25,7 @@ export const impactEvents: ImpactEvent[] = [
     date: "September 2026",
     location: "North Texas",
     description:
-      "Our Argyle High School chapter, led by Shreyas Choudhary, Rohan P., Deva A., Sushanth G., and Rohith P., assembled and delivered 100 STEMKits to Health Services of North Texas, which shared them among six hospitals. Thank you to the team for the time and effort they put into spreading STEM.",
+      "Our Argyle High School chapter, led by Shreyas Choudhary, Rohan Pasumarthi, Deva Amruthuluru, Sushanth Ganta, and Rohith Pasumarthi, assembled and delivered 100 STEMKits to Health Services of North Texas, which shared them among six hospitals. Thank you to the team for the time and effort they put into spreading STEM.",
     photos: [
       {
         src: "/images/impact/argyle-1.avif",
