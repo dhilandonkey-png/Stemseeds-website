@@ -12,16 +12,16 @@ export function EventCard({ event }: { event: ImpactEvent }) {
   const photo = event.photos[active];
 
   return (
-    <article className="grid h-full gap-6 sm:grid-cols-[minmax(0,0.85fr)_minmax(0,1fr)] sm:gap-7">
+    <article className="grid h-full gap-6 sm:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] sm:gap-7">
       <div className="flex flex-col gap-3">
-        <div className="relative aspect-[4/4.6] overflow-hidden rounded-2xl bg-mint shadow-[0_16px_36px_rgba(8,62,72,0.14)]">
+        <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-mint shadow-[0_16px_36px_rgba(8,62,72,0.14)]">
           {photo ? (
             <Image
               key={photo.src}
               src={photo.src}
               alt={photo.alt}
               fill
-              sizes="(max-width: 640px) 90vw, (max-width: 1024px) 40vw, 280px"
+              sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 320px"
               className="object-cover"
             />
           ) : null}
