@@ -84,7 +84,7 @@ export const joinCta = {
 
 export const chapterNetwork = {
   title: "A chapter network across six countries",
-  body: "STEMSeeds is led by a team of more than 36 students across the United States, India, Bangladesh, the Philippines, Sweden, and Canada, each serving different roles but united by a shared purpose.",
+  body: "STEMSeeds is led by a team of more than 50 students across the United States, India, Bangladesh, the Philippines, Sweden, and Canada, each serving different roles but united by a shared purpose.",
   countries: [
     "United States",
     "India",

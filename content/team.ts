@@ -14,7 +14,7 @@ export type TeamMember = {
 export const aboutIntro = {
   eyebrow: "Who Are We",
   title: "Student-founded, mission-driven",
-  body: "STEMSeeds is a student-founded philanthropic organization based in Frisco, Texas. Our mission is to make STEM education accessible to every child, regardless of socioeconomic background or time spent in the hospital. For many of the children we serve, these moments of learning also offer a chance to step away from hospital routines and simply enjoy being curious, playful learners again. STEMSeeds is led by two Co-Founders, Ritvik Avula and Rayhan Raja, who work alongside a team of more than 36 students, each serving different roles but united by a shared purpose: supporting this mission and the children at its heart.",
+  body: "STEMSeeds is a student-founded philanthropic organization based in Frisco, Texas. Our mission is to make STEM education accessible to every child, regardless of socioeconomic background or time spent in the hospital. For many of the children we serve, these moments of learning also offer a chance to step away from hospital routines and simply enjoy being curious, playful learners again. STEMSeeds is led by two Co-Founders, Ritvik Avula and Rayhan Raja, who work alongside a team of more than 50 students, each serving different roles but united by a shared purpose: supporting this mission and the children at its heart.",
 } as const;
 
 export const founders: TeamMember[] = [
