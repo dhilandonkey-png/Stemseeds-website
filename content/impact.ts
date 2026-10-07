@@ -21,6 +21,31 @@ export const impactIntro = {
 /** Newest first. Add a new event by copying one block and filling it in. */
 export const impactEvents: ImpactEvent[] = [
   {
+    title: "Reedy High School Delivers 50 Kits to Cook Children's",
+    date: "July 17, 2026",
+    location: "Fort Worth, Texas",
+    description:
+      "Our Reedy High School chapter, led by Satvik Gundumalla, Eshan Rudravaram, Aadith Nair, Mihir Kshirsagar, and Adit Nalluri, packed and delivered 50 STEMKits to Cook Children's Medical Center in Fort Worth. Thank you to the team for the time and effort they put into bringing hands-on STEM to young patients.",
+    photos: [
+      {
+        src: "/images/impact/cook-childrens-reedy-1.avif",
+        alt: "Reedy chapter members giving a thumbs up with a Cook Children's staff member and a cart of STEMKits outside the hospital",
+      },
+      {
+        src: "/images/impact/cook-childrens-reedy-2.avif",
+        alt: "Four chapter members pointing to a stack of finished STEMKit boxes",
+      },
+      {
+        src: "/images/impact/cook-childrens-reedy-3.avif",
+        alt: "A wall of sealed STEMKit boxes with STEMSeeds tape",
+      },
+      {
+        src: "/images/impact/cook-childrens-reedy-4.avif",
+        alt: "Kit supplies laid out on tables before assembly: cups, straws, craft sticks, and instruction sheets",
+      },
+    ],
+  },
+  {
     title: "Recognized by the Mayor of Frisco",
     location: "Frisco, Texas",
     description:
