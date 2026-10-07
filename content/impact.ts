@@ -607,12 +607,6 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
-        src: "/images/recognition/mayoralrecognition2.avif",
-        alt: "STEMSeeds founders holding a City of Frisco certificate of recognition",
-      },
-    ],
-  },
-  {
     title: "Recognized by the Mayor of Mansfield",
     location: "Mansfield, Texas",
     description:
