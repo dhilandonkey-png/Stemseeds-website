@@ -4,7 +4,7 @@ export const whoWeAre = {
   paragraphs: [
     "STEMSeeds is a student-led philanthropic organization focused on bringing hands-on STEM education to children of all backgrounds, including pediatric patients and underserved communities. Our team designs and packages custom 3-in-1 STEM activity kits called STEMKits, each containing multiple hands-on experiments that allow children to explore scientific concepts through building, testing, and play.",
     "What matters most to us is helping kids feel like kids again. For children facing long or difficult hospital stays, our STEM kits offer a sense of normalcy, curiosity, and joy during moments that are often stressful or isolating.",
-    "Founded by high school students in Frisco, Texas, STEMSeeds has grown from a small local idea into a global initiative. So far, we have distributed over 600 STEM kits and raised around $5.2K to support our work. Our kits have reached children across the DFW Metroplex, as well as in India, Bangladesh, Sweden, and Canada.",
+    "Founded by high school students in Frisco, Texas, STEMSeeds has grown from a small local idea into a global initiative. So far, we have distributed over 900 STEM kits and raised around $5.2K to support our work. Our kits have reached children across the DFW Metroplex and Michigan, as well as in India, Bangladesh, Sweden, and Canada.",
     "As our impact continues to grow, new chapters are currently being developed in the Philippines and China, allowing us to reach even more children around the world and remind them that learning and creativity do not stop, even in the hardest moments.",
   ],
   images: [
