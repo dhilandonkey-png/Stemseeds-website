@@ -68,6 +68,10 @@ export const impactEvents: ImpactEvent[] = [
         src: "/images/impact/pickleball-reedy-4.avif",
         alt: "Three players smiling, one holding a $100 bill",
       },
+      {
+        src: "/images/impact/pickleball-reedy-5.avif",
+        alt: "Three players smiling, two holding up cash",
+      },
     ],
   },
   {
