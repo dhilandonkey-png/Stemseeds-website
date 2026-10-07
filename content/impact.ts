@@ -196,6 +196,27 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
+    title: "Argyle Chapter Delivers 75 Kits to Children's Health",
+    date: "January 9, 2026",
+    location: "North Texas",
+    description:
+      "Our Argyle High School chapter, led by Shreyas Choudhary, loaded up and delivered 75 STEMKits to Children's Health. Thank you to the team for the time and effort they put into bringing hands-on STEM to young patients.",
+    photos: [
+      {
+        src: "/images/impact/argyle-childrens-1.avif",
+        alt: "Four chapter members standing behind a cart of STEMKits in the Children's Health lobby",
+      },
+      {
+        src: "/images/impact/argyle-childrens-2.avif",
+        alt: "Chapter members packing sealed STEMKit boxes into a car trunk",
+      },
+      {
+        src: "/images/impact/argyle-childrens-3.avif",
+        alt: "Chapter members unloading STEMKit boxes from a car outside the hospital",
+      },
+    ],
+  },
+  {
     title: "Recognized by the Mayor of Frisco",
     location: "Frisco, Texas",
     description:
