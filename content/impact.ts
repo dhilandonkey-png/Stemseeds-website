@@ -393,6 +393,31 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
+    title: "Recognized by the City of Frisco",
+    date: "September 10, 2025",
+    location: "Frisco, Texas",
+    description:
+      "STEMSeeds received a Certificate of Recognition from the City of Frisco for our significant impact across the city. This couldn't have been possible without the help of all of our chapters, especially those across Frisco ISD. Here's to spreading STEM to hospitalized children and inspiring education in our young scientists.",
+    photos: [
+      {
+        src: "/images/impact/frisco-recognition-1.avif",
+        alt: "Three STEMSeeds members holding the City of Frisco Certificate of Recognition",
+      },
+      {
+        src: "/images/impact/frisco-recognition-2.avif",
+        alt: "STEMSeeds members and a city representative with the Certificate of Recognition at the George A. Purefoy Municipal Center",
+      },
+      {
+        src: "/images/impact/frisco-recognition-3.avif",
+        alt: "Three STEMSeeds members holding the certificate outside Frisco City Hall",
+      },
+      {
+        src: "/images/recognition/mayoralrecognition2.avif",
+        alt: "STEMSeeds founders holding a City of Frisco certificate of recognition",
+      },
+    ],
+  },
+  {
     title: "Independence Chapter Delivers Kits to Pediatric People",
     date: "August 7, 2025",
     location: "Frisco, Texas",
@@ -582,12 +607,6 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
-    title: "Recognized by the Mayor of Frisco",
-    location: "Frisco, Texas",
-    description:
-      "STEMSeeds was honored with a certificate of recognition from the Mayor of Frisco for its commitment to thoughtful, student-led community impact.",
-    photos: [
-      {
         src: "/images/recognition/mayoralrecognition2.avif",
         alt: "STEMSeeds founders holding a City of Frisco certificate of recognition",
       },
