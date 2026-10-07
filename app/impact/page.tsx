@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { EventCard } from "@/components/impact/event-card";
 import { AnimatedCounter } from "@/components/ui/animated-counter";
 import { Reveal } from "@/components/ui/reveal";
+import { SectionHeading } from "@/components/ui/section-heading";
 import { impactEvents, impactIntro } from "@/content/impact";
 import { stats } from "@/content/site";
 
@@ -11,6 +12,11 @@ export const metadata: Metadata = {
   description:
     "See every STEMSeeds event: hospital deliveries, new chapters, and recognitions, with photos and dates.",
 };
+
+const recognitions = impactEvents.filter(
+  (event) => event.kind === "recognition",
+);
+const timeline = impactEvents.filter((event) => event.kind !== "recognition");
 
 export default function ImpactPage() {
   return (
@@ -59,15 +65,41 @@ export default function ImpactPage() {
       </section>
 
       <section
-        className="px-6 pt-4 pb-20 sm:pb-28"
-        aria-label="Events"
+        className="bg-mint/50 px-6 py-16 sm:py-20"
+        aria-label="Awards and recognition"
       >
-        <div className="mx-auto grid max-w-6xl gap-x-12 gap-y-16 lg:grid-cols-2">
-          {impactEvents.map((event, index) => (
-            <Reveal key={event.title} delay={(index % 2) * 0.08}>
-              <EventCard event={event} />
-            </Reveal>
-          ))}
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Awards & Recognition"
+              title="Honored by our community"
+            />
+          </Reveal>
+          <div className="mt-10 grid gap-x-12 gap-y-14 lg:grid-cols-2">
+            {recognitions.map((event, index) => (
+              <Reveal key={event.title} delay={(index % 2) * 0.08}>
+                <EventCard event={event} />
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-16 sm:py-24" aria-label="Our journey">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Our Journey"
+              title="Deliveries, fundraisers, and partnerships"
+            />
+          </Reveal>
+          <div className="mt-10 grid gap-x-12 gap-y-16 lg:grid-cols-2">
+            {timeline.map((event, index) => (
+              <Reveal key={event.title} delay={(index % 2) * 0.08}>
+                <EventCard event={event} />
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
     </main>

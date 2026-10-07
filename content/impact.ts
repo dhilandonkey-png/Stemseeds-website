@@ -13,6 +13,8 @@ export type ImpactEvent = {
   recipientType?: "hospital" | "school";
   /** Chapter that ran the event, linked to its section on the Team page. */
   chapter?: { name: string; teamId: string };
+  /** Awards and recognitions are shown in their own section. */
+  kind?: "recognition";
   description: string;
   photos: ImpactPhoto[];
 };
@@ -284,6 +286,7 @@ export const impactEvents: ImpactEvent[] = [
   },
   {
     title: "Recognized by the City of Mansfield",
+    kind: "recognition",
     date: "December 21, 2025",
     location: "Mansfield, Texas",
     chapter: { name: "Mansfield ECHS", teamId: "mansfield-echs" },
@@ -416,6 +419,7 @@ export const impactEvents: ImpactEvent[] = [
   },
   {
     title: "Recognized by the City of Frisco",
+    kind: "recognition",
     date: "September 10, 2025",
     location: "Frisco, Texas",
     description:

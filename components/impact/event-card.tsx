@@ -20,7 +20,7 @@ export function EventCard({ event }: { event: ImpactEvent }) {
   const photo = event.photos[active];
 
   return (
-    <article className="grid h-full gap-6 sm:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] sm:gap-7">
+    <article className="flex h-full flex-col gap-5">
       <div className="flex flex-col gap-3">
         <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-mint shadow-[0_16px_36px_rgba(8,62,72,0.14)]">
           {photo ? (
@@ -29,7 +29,7 @@ export function EventCard({ event }: { event: ImpactEvent }) {
               src={photo.src}
               alt={photo.alt}
               fill
-              sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 320px"
+              sizes="(max-width: 1024px) 92vw, 560px"
               className="object-cover"
             />
           ) : null}
@@ -44,7 +44,7 @@ export function EventCard({ event }: { event: ImpactEvent }) {
                 aria-label={`Show photo ${index + 1} of ${event.photos.length}`}
                 aria-pressed={index === active}
                 className={cn(
-                  "relative size-12 overflow-hidden rounded-lg ring-2 transition focus-visible:outline-none focus-visible:ring-ring",
+                  "relative size-14 overflow-hidden rounded-lg ring-2 transition focus-visible:outline-none focus-visible:ring-ring",
                   index === active
                     ? "ring-primary"
                     : "ring-transparent opacity-70 hover:opacity-100",
@@ -54,7 +54,7 @@ export function EventCard({ event }: { event: ImpactEvent }) {
                   src={thumb.src}
                   alt=""
                   fill
-                  sizes="48px"
+                  sizes="56px"
                   className="object-cover"
                 />
               </button>
