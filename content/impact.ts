@@ -46,6 +46,31 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
+    title: "Reedy Chapter Pickleball Tournament",
+    date: "July 5, 2026",
+    location: "Frisco, Texas",
+    description:
+      "Our Reedy High School chapter hosted a STEMSeeds pickleball tournament to raise money for its July kit delivery to Cook Children's Medical Center. Thank you to everyone who came out to play and support the next generation of young innovators.",
+    photos: [
+      {
+        src: "/images/impact/pickleball-reedy-1.avif",
+        alt: "Six players stacking hands over a pickleball in front of the courts",
+      },
+      {
+        src: "/images/impact/pickleball-reedy-2.avif",
+        alt: "Two players in the middle of a pickleball match",
+      },
+      {
+        src: "/images/impact/pickleball-reedy-3.avif",
+        alt: "Tournament players with their paddles gathered around a picnic table",
+      },
+      {
+        src: "/images/impact/pickleball-reedy-4.avif",
+        alt: "Three players smiling, one holding a $100 bill",
+      },
+    ],
+  },
+  {
     title: "Recognized by the Mayor of Frisco",
     location: "Frisco, Texas",
     description:
