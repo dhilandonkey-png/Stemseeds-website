@@ -485,6 +485,36 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
+    title: "50 Kits Delivered to Cook Children's and Scottish Rite",
+    date: "March 21, 2025",
+    location: "Frisco, Texas",
+    recipient: "Cook Children's Pediatrics & Scottish Rite for Children",
+    description:
+      "Special thanks to Cook Children's and Scottish Rite for Children for partnering with us to deliver a combined total of 50 STEMKits. This opportunity was truly a blessing, allowing us to further inspire STEM across the community.",
+    photos: [
+      {
+        src: "/images/impact/cook-scottish-1.avif",
+        alt: "Two STEMSeeds members holding STEMKits outside Cook Children's Pediatrics",
+      },
+      {
+        src: "/images/impact/cook-scottish-2.avif",
+        alt: "Two STEMSeeds members with a wagon of STEMKits outside Scottish Rite for Children",
+      },
+      {
+        src: "/images/impact/cook-scottish-3.avif",
+        alt: "Two STEMSeeds members loading STEMKits from a car trunk into a red wagon",
+      },
+      {
+        src: "/images/impact/cook-scottish-4.avif",
+        alt: "Three STEMSeeds members beside a car trunk full of STEMKits",
+      },
+      {
+        src: "/images/impact/cook-scottish-5.avif",
+        alt: "The Scottish Rite for Children building in Frisco",
+      },
+    ],
+  },
+  {
     title: "Recognized by the Mayor of Frisco",
     location: "Frisco, Texas",
     description:
