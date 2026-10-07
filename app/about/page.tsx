@@ -1,20 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
-import { MemberCard, SharedPhotoCard } from "@/components/about/member-card";
 import { PartnersSection } from "@/components/home/partners";
 import { SponsorsSection } from "@/components/home/sponsors";
 import { AnimatedCounter } from "@/components/ui/animated-counter";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/ui/reveal";
-import { SectionHeading } from "@/components/ui/section-heading";
 import { site, stats } from "@/content/site";
-import {
-  aboutIntro,
-  coreTeam,
-  founders,
-  internationalChapters,
-  usChapters,
-} from "@/content/team";
+import { aboutIntro } from "@/content/team";
 
 export const metadata: Metadata = {
   title: "About",
@@ -43,7 +36,10 @@ export default function AboutPage() {
             <p className="mt-7 text-base leading-relaxed text-foreground/80 sm:text-lg">
               {aboutIntro.body}
             </p>
-            <div className="mt-9 flex justify-center">
+            <div className="mt-9 flex flex-wrap justify-center gap-3">
+              <Button asChild size="lg" variant="outline">
+                <Link href="/team">Meet Our Team</Link>
+              </Button>
               <Button asChild size="lg">
                 <a
                   href={site.donateHref}
@@ -82,113 +78,6 @@ export default function AboutPage() {
       <PartnersSection />
       <SponsorsSection />
 
-      <section className="px-6 py-16 sm:py-20" aria-labelledby="founders-heading">
-        <div className="mx-auto max-w-6xl">
-          <Reveal>
-            <SectionHeading eyebrow="Leadership" title="Founders" />
-          </Reveal>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:max-w-4xl">
-            {founders.map((member, index) => (
-              <Reveal key={member.name} delay={index * 0.08}>
-                <MemberCard member={member} />
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-mint/50 px-6 py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl">
-          <Reveal>
-            <SectionHeading eyebrow="Core Team" title="Outreach" />
-          </Reveal>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {coreTeam.map((member, index) => (
-              <Reveal key={member.name} delay={index * 0.08}>
-                <MemberCard member={member} />
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="px-6 py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl">
-          <Reveal>
-            <SectionHeading
-              eyebrow="Chapter Presidents"
-              title="Chapter Presidents (United States)"
-            />
-          </Reveal>
-          <div className="mt-12 space-y-14">
-            {usChapters.map((group) => (
-              <div key={group.state}>
-                <Reveal>
-                  <h3 className="flex items-center gap-3 text-sm font-bold tracking-[0.24em] text-primary uppercase">
-                    {group.state}
-                    <span
-                      aria-hidden="true"
-                      className="h-px flex-1 bg-border"
-                    />
-                  </h3>
-                </Reveal>
-                <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                  {group.members.map((member, index) => (
-                    <Reveal key={member.name} delay={index * 0.05}>
-                      <MemberCard member={member} />
-                    </Reveal>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-aqua/35 px-6 py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl">
-          <Reveal>
-            <SectionHeading
-              eyebrow="Around the World"
-              title="International Chapters"
-            />
-          </Reveal>
-          <div className="mt-12 space-y-14">
-            {internationalChapters.map((group) => {
-              const sharesPhoto =
-                group.members.length > 1 &&
-                new Set(group.members.map((member) => member.image)).size === 1;
-
-              return (
-                <div key={group.country}>
-                  <Reveal>
-                    <h3 className="flex items-center gap-3 text-sm font-bold tracking-[0.24em] text-primary uppercase">
-                      {group.country}
-                      <span
-                        aria-hidden="true"
-                        className="h-px flex-1 bg-ink/10"
-                      />
-                    </h3>
-                  </Reveal>
-                  {sharesPhoto ? (
-                    <Reveal className="mt-6">
-                      <SharedPhotoCard members={group.members} />
-                    </Reveal>
-                  ) : (
-                    <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                      {group.members.map((member, index) => (
-                        <Reveal key={member.name} delay={index * 0.05}>
-                          <MemberCard member={member} />
-                        </Reveal>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

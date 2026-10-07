@@ -20,6 +20,7 @@ export const site = {
 export const navigation = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
+  { label: "Team", href: "/team" },
   { label: "Join Us", href: "/join-us" },
   { label: "Impact", href: "/impact" },
   { label: "STEM Kit", href: "/stem-kit" },

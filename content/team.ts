@@ -4,6 +4,8 @@ export type TeamMember = {
   school?: string;
   state?: string;
   country: string;
+  /** Heading this member is grouped under on the Team page. Defaults to their school. */
+  chapter?: string;
   bio: string;
   image: string;
   imageAlt: string;
@@ -274,6 +276,7 @@ const newYork: TeamMember[] = [
 const michigan: TeamMember[] = [
   {
     name: "Rishan Patel",
+    chapter: "Michigan Chapter Leadership",
     role: "Michigan Chapter President",
     school: "Northville High School",
     state: "Michigan",
@@ -284,6 +287,7 @@ const michigan: TeamMember[] = [
   },
   {
     name: "Akshaj Bhan",
+    chapter: "Michigan Chapter Leadership",
     role: "Co-Vice President",
     school: "Northville High School",
     state: "Michigan",
@@ -294,6 +298,7 @@ const michigan: TeamMember[] = [
   },
   {
     name: "Ariv Srivastava",
+    chapter: "Michigan Chapter Leadership",
     role: "Co-Vice President",
     school: "Northville High School",
     state: "Michigan",
@@ -304,6 +309,7 @@ const michigan: TeamMember[] = [
   },
   {
     name: "Dhruv Pamuru",
+    chapter: "Michigan Chapter Leadership",
     role: "Outreach Officer",
     school: "Northville High School",
     state: "Michigan",
@@ -314,6 +320,7 @@ const michigan: TeamMember[] = [
   },
   {
     name: "Suraj Uppuganti",
+    chapter: "Michigan Chapter Leadership",
     role: "Marketing & Communications Officer",
     school: "Northville High School",
     state: "Michigan",
@@ -324,6 +331,7 @@ const michigan: TeamMember[] = [
   },
   {
     name: "Avishkar Nikam",
+    chapter: "Michigan Chapter Leadership",
     role: "Finance Manager",
     school: "Northville High School",
     state: "Michigan",
@@ -575,5 +583,22 @@ export const internationalChapters: {
     ],
   },
 ];
+
+export type ChapterGroup = { chapter: string; members: TeamMember[] };
+
+/** Groups members by chapter (or school), keeping the order they're listed in. */
+export function groupByChapter(
+  members: TeamMember[],
+  fallback: string,
+): ChapterGroup[] {
+  const groups: ChapterGroup[] = [];
+  for (const member of members) {
+    const chapter = member.chapter ?? member.school ?? fallback;
+    const existing = groups.find((group) => group.chapter === chapter);
+    if (existing) existing.members.push(member);
+    else groups.push({ chapter, members: [member] });
+  }
+  return groups;
+}
 
 export const usStatesList = usChapters.map((group) => group.state);
