@@ -336,6 +336,40 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
+    title: "Sweden Chapter Delivers 45 Kits with the Red Cross",
+    date: "October 28, 2025",
+    location: "Helsingborg, Sweden",
+    recipient: "Swedish Red Cross (Röda Korset)",
+    chapter: {
+      name: "International School of Helsingborg",
+      teamId: "international-school-of-helsingborg",
+    },
+    description:
+      "Our Sweden chapter, led by Medha Sridar from the International School of Helsingborg, partnered with the Red Cross to prepare and deliver 45 STEMKits, which will be distributed to hospitalized pediatric patients across Sweden. The team even translated the instruction manuals into Swedish. We're proud to see STEMSeeds continuing to make a global impact.",
+    photos: [
+      {
+        src: "/images/impact/sweden-1.avif",
+        alt: "Medha Sridar and a Swedish Red Cross volunteer holding STEMKits behind a table of boxes",
+      },
+      {
+        src: "/images/impact/sweden-2.avif",
+        alt: "STEMKit boxes labeled Paper Rocket, Pom-Pom Catapult, and Paper Robotic Hand next to STEMSeeds flyers",
+      },
+      {
+        src: "/images/impact/sweden-3.avif",
+        alt: "STEMSeeds flyers, brochures, and Swedish instruction manuals laid out on a table",
+      },
+      {
+        src: "/images/impact/sweden-4.avif",
+        alt: "A spread of STEM byggsatser instruction manuals translated into Swedish",
+      },
+      {
+        src: "/images/impact/sweden-5.avif",
+        alt: "The Röda Korset (Red Cross) building in Helsingborg surrounded by white roses",
+      },
+    ],
+  },
+  {
     title: "Recognized by the Mayor of Frisco",
     location: "Frisco, Texas",
     description:
