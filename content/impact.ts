@@ -549,6 +549,35 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
+    title: "STEMSeeds Volleyball Tournament",
+    date: "November 9, 2024",
+    location: "Frisco, Texas",
+    description:
+      "STEMSeeds hosted a beach volleyball tournament to raise money for STEMKits. Every team that played helped sponsor a young scientist, and we're grateful to everyone who came out to support the cause.",
+    photos: [
+      {
+        src: "/images/impact/volleyball-1.avif",
+        alt: "Players in the middle of a rally on the sand volleyball court",
+      },
+      {
+        src: "/images/impact/volleyball-2.avif",
+        alt: "A team of five players standing together on the sand court",
+      },
+      {
+        src: "/images/impact/volleyball-3.avif",
+        alt: "Three STEMSeeds members smiling together on the volleyball court",
+      },
+      {
+        src: "/images/impact/volleyball-4.avif",
+        alt: "A team of four players holding a volleyball on the sand court",
+      },
+      {
+        src: "/images/impact/volleyball-5.avif",
+        alt: "A player jumping to serve the volleyball",
+      },
+    ],
+  },
+  {
     title: "Recognized by the Mayor of Frisco",
     location: "Frisco, Texas",
     description:
