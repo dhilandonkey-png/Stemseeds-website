@@ -516,6 +516,10 @@ export const impactEvents: ImpactEvent[] = [
         src: "/images/impact/cook-scottish-6.avif",
         alt: "Rows of open STEMKit boxes packed with instruction manuals, QR codes, and supplies",
       },
+      {
+        src: "/images/impact/cook-scottish-7.avif",
+        alt: "Three STEMSeeds members assembling kit supplies around a table covered in construction paper, straws, and instruction manuals",
+      },
     ],
   },
   {
