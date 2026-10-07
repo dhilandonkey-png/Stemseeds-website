@@ -370,6 +370,29 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
+    title: "Wylie Chapter Delivers 95 Kits to Children's Health Dallas",
+    date: "October 14, 2025",
+    location: "Dallas, Texas",
+    recipient: "Children's Medical Center Dallas",
+    chapter: { name: "Wylie High School", teamId: "wylie-high-school" },
+    description:
+      "Our Wylie High School chapter, led by Praseed Banerjee, delivered 95 STEMKits to Children's Health in Dallas. Thank you to everyone who made it happen as we keep working to bring a sense of joy, creativity, and normalcy to hospitalized pediatric patients during their long stays.",
+    photos: [
+      {
+        src: "/images/impact/wylie-1.avif",
+        alt: "Four chapter members holding STEMKits beside a Child Life cart inside Children's Medical Center Dallas",
+      },
+      {
+        src: "/images/impact/wylie-2.avif",
+        alt: "Four chapter members standing next to a cart of STEMKits outside the Children's Health entrance",
+      },
+      {
+        src: "/images/impact/wylie-3.avif",
+        alt: "Chapter members taking a selfie in the Children's Medical Center lobby",
+      },
+    ],
+  },
+  {
     title: "Recognized by the Mayor of Frisco",
     location: "Frisco, Texas",
     description:
