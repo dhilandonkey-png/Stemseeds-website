@@ -169,8 +169,8 @@ export const impactEvents: ImpactEvent[] = [
         alt: "Three chapter members sealing a box with STEMSeeds tape",
       },
       {
-        src: "/images/impact/michigan-5.avif",
-        alt: "A large pile of sealed STEMKit boxes ready for delivery",
+        src: "/images/impact/michigan-pile.avif",
+        alt: "A pile of sealed STEMKit boxes on a wooden floor, ready for delivery",
       },
     ],
   },
