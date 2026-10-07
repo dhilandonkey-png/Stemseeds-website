@@ -21,6 +21,7 @@ export const navigation = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Join Us", href: "/join-us" },
+  { label: "Impact", href: "/impact" },
   { label: "STEM Kit", href: "/stem-kit" },
   { label: "Donate", href: "/donate" },
 ] as const;
