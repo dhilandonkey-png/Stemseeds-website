@@ -100,6 +100,35 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
+    title: "Michigan Chapter's First Delivery",
+    date: "March 14, 2026",
+    location: "Detroit, Michigan",
+    description:
+      "Our Michigan chapter at Northville High School, led by Rishan Patel, completed its first kit drop, delivering more than 40 STEMKits to the Children's Hospital of Michigan. The team packed and sealed every box by hand, and more deliveries are on the way.",
+    photos: [
+      {
+        src: "/images/impact/michigan-1.avif",
+        alt: "Two chapter members wheeling STEMKit boxes toward the Children's Hospital of Michigan",
+      },
+      {
+        src: "/images/impact/michigan-2.avif",
+        alt: "Chapter members unloading STEMKit boxes from a car trunk into a wheelchair",
+      },
+      {
+        src: "/images/impact/michigan-3.avif",
+        alt: "Chapter members taping STEMKit boxes shut on the floor",
+      },
+      {
+        src: "/images/impact/michigan-4.avif",
+        alt: "Three chapter members sealing a box with STEMSeeds tape",
+      },
+      {
+        src: "/images/impact/michigan-5.avif",
+        alt: "A large pile of sealed STEMKit boxes ready for delivery",
+      },
+    ],
+  },
+  {
     title: "Recognized by the Mayor of Frisco",
     location: "Frisco, Texas",
     description:
