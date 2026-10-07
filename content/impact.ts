@@ -283,6 +283,28 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
+    title: "Recognized by the City of Mansfield",
+    date: "December 21, 2025",
+    location: "Mansfield, Texas",
+    chapter: { name: "Mansfield ECHS", teamId: "mansfield-echs" },
+    description:
+      "STEMSeeds received a Certificate of Recognition from the City of Mansfield for our chapter's impact across the city. Thank you to Shahzaib, Lucy, Hailey, and Amber, whose hard work made this possible. Here's to many more accomplishments to come, and thank you again to all our wonderful chapters.",
+    photos: [
+      {
+        src: "/images/impact/mansfield-recognition-1.avif",
+        alt: "Mansfield chapter members and a city official holding the Certificate of Recognition in the Mansfield council chambers",
+      },
+      {
+        src: "/images/impact/mansfield-recognition-2.avif",
+        alt: "Three Mansfield chapter members holding the certificate folder outside Mansfield City Hall",
+      },
+      {
+        src: "/images/recognition/mayoralrecognition1.avif",
+        alt: "STEMSeeds members receiving a certificate of recognition at Mansfield City Hall",
+      },
+    ],
+  },
+  {
     title: "Mansfield ECHS Chapter Delivers 75 Kits to Cook Children's",
     date: "November 21, 2025",
     location: "Fort Worth, Texas",
@@ -603,18 +625,6 @@ export const impactEvents: ImpactEvent[] = [
       {
         src: "/images/impact/volleyball-6.avif",
         alt: "A player setting the ball at the net during a tournament match",
-      },
-    ],
-  },
-  {
-    title: "Recognized by the Mayor of Mansfield",
-    location: "Mansfield, Texas",
-    description:
-      "Our members received a certificate of recognition at Mansfield City Hall, acknowledging the care, intention, and consistency behind our service efforts.",
-    photos: [
-      {
-        src: "/images/recognition/mayoralrecognition1.avif",
-        alt: "STEMSeeds members receiving a certificate of recognition at Mansfield City Hall",
       },
     ],
   },
