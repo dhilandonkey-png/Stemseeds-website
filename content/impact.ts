@@ -132,6 +132,18 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
+    title: "STEMSeeds Partners with Singularity Robotics",
+    date: "June 16, 2026",
+    description:
+      "STEMSeeds announced a new partnership with Singularity Robotics, FRC Team 10032, joining forces to create a more unified and impactful change in the community. Together, the teams launched a GoFundMe to kickstart the collaboration, and Singularity is now planning its own upcoming STEMSeeds kit drop.",
+    photos: [
+      {
+        src: "/images/impact/singularity-partnership.avif",
+        alt: "Singularity Robotics team 10032 and STEMSeeds logos side by side over photos of both teams",
+      },
+    ],
+  },
+  {
     title: "Toronto Chapter Delivers Kits to Two Canadian Hospitals",
     date: "May 1, 2026",
     location: "Toronto, Canada",
