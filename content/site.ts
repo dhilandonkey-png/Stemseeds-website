@@ -29,6 +29,6 @@ export const navigation = [
 
 export const stats = [
   { value: 945, suffix: "+", label: "Kits Delivered" },
-  { value: 36, suffix: "", label: "Active Chapters" },
+  { value: 32, suffix: "", label: "Active Chapters" },
   { value: 6, suffix: "", label: "Countries" },
 ] as const;
