@@ -175,6 +175,27 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
+    title: "Wakeland Chapter Delivers 25 Kits to Children's Health Plano",
+    date: "January 20, 2026",
+    location: "Plano, Texas",
+    description:
+      "Our Wakeland High School chapter, led by Hasini Yalavarthi, delivered 25 STEMKits to Children's Health Plano. Each box was packed with pom-pom catapult and robotic hand experiments, plus a QR code linking to step-by-step instructions. Everyone at STEMSeeds is grateful for the time and effort the team put into spreading STEM.",
+    photos: [
+      {
+        src: "/images/impact/wakeland-1.avif",
+        alt: "A chapter member and a Children's Health staff member holding STEMKits beside a wagon full of boxes",
+      },
+      {
+        src: "/images/impact/wakeland-2.avif",
+        alt: "Open STEMKit boxes packed with pom-pom catapult and robotic hand supplies and QR code cards",
+      },
+      {
+        src: "/images/impact/wakeland-3.avif",
+        alt: "A large pile of sealed STEMKit boxes ready for delivery",
+      },
+    ],
+  },
+  {
     title: "Recognized by the Mayor of Frisco",
     location: "Frisco, Texas",
     description:
