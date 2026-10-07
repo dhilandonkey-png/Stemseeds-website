@@ -393,6 +393,40 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
+    title: "Independence Chapter Delivers Kits to Pediatric People",
+    date: "August 7, 2025",
+    location: "Frisco, Texas",
+    recipient: "Pediatric People",
+    chapter: {
+      name: "Independence High School",
+      teamId: "independence-high-school",
+    },
+    description:
+      "Our Independence High School chapter, led by Akshaya Karuturi, partnered with Pediatric People for a quick drop of STEMKits for their young patients. Great work to everyone involved as we keep spreading STEM.",
+    photos: [
+      {
+        src: "/images/impact/independence-1.avif",
+        alt: "Three chapter members holding STEMKit boxes in front of the Pediatric People rocket ship",
+      },
+      {
+        src: "/images/impact/independence-2.avif",
+        alt: "Chapter members holding STEMKits at Pediatric People",
+      },
+      {
+        src: "/images/impact/independence-3.avif",
+        alt: "Two chapter members holding stacks of STEMKits beside the rocket ship display",
+      },
+      {
+        src: "/images/impact/independence-4.avif",
+        alt: "A Pediatric People staff member taking a selfie with the chapter members and their kits",
+      },
+      {
+        src: "/images/impact/independence-5.avif",
+        alt: "Stacked STEMKit boxes sealed with STEMSeeds tape",
+      },
+    ],
+  },
+  {
     title: "Recognized by the Mayor of Frisco",
     location: "Frisco, Texas",
     description:
