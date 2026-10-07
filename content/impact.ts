@@ -314,6 +314,28 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
+    title: "Toronto Chapter Delivers 40 Kits to Holland Bloorview",
+    date: "November 20, 2025",
+    location: "Toronto, Canada",
+    recipient: "Holland Bloorview Kids Rehabilitation Hospital",
+    chapter: {
+      name: "University of Toronto Schools",
+      teamId: "university-of-toronto-schools",
+    },
+    description:
+      "Our Toronto chapter, led by Maisey Zhao and Isabel Tian from University of Toronto Schools, worked together to prepare 40 STEMKits for the children at Holland Bloorview Kids Rehabilitation Hospital. Each kit included a paper rocket, pom-pom catapult, and paper robotic hand with an instruction manual. We're so grateful for chapter leaders working hard to grow STEMSeeds' global impact and keep inspiring learning.",
+    photos: [
+      {
+        src: "/images/impact/toronto-holland-1.avif",
+        alt: "Two chapter members and a Holland Bloorview staff member with a stack of STEMKit boxes",
+      },
+      {
+        src: "/images/impact/toronto-holland-2.avif",
+        alt: "Open STEMKit boxes with instruction manuals for the paper rocket, pom-pom catapult, and paper robotic hand",
+      },
+    ],
+  },
+  {
     title: "Recognized by the Mayor of Frisco",
     location: "Frisco, Texas",
     description:
