@@ -43,7 +43,7 @@ export const requestKits = {
   steps: [
     {
       title: "Send us a request",
-      text: "Email us a few details about your organization and the children you serve.",
+      text: "Fill out the form below with a few details about your organization and the children you serve.",
     },
     {
       title: "We match you with a chapter",
@@ -54,15 +54,5 @@ export const requestKits = {
       text: "Students hand-pack and deliver your STEMKits, with instructions and science flyers inside.",
     },
   ],
-  include: [
-    "Organization name and address",
-    "Your name, role, and phone number",
-    "About how many children, and their age range",
-    "When you'd like to receive the kits",
-    "Any guidelines we should follow (e.g. hospital safety rules)",
-  ],
   note: "Requests depend on chapter availability in your area, so please reach out at least a few weeks ahead. We'll reply by email to confirm.",
-  emailSubject: "STEMKit Request",
-  emailBody:
-    "Hi STEMSeeds team,\n\nWe'd like to request STEMKits.\n\nOrganization:\nAddress:\nContact name and role:\nPhone:\nNumber of children:\nAge range:\nPreferred delivery date:\nAnything else we should know:\n\nThank you!",
 } as const;

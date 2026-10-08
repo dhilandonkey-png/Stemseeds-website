@@ -136,106 +136,50 @@
 }
 
 /* STEM Kit experiment demos (components/stem-kit/experiment-demo.tsx) */
-.demo-play .demo-catapult-arm,
-.demo-play .demo-catapult-pompom,
-.demo-play .demo-catapult-loaded,
-.demo-play .demo-rocket-body,
-.demo-play .demo-rocket-puff,
-.demo-play .demo-hand-finger,
-.demo-play .demo-hand-thumb,
-.demo-play .demo-hand-tab {
-  animation-fill-mode: both;
-  animation-timing-function: ease-in-out;
+.demo-pulse {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: demo-pulse 1.4s ease-out infinite;
 }
-.demo-catapult-arm {
-  transform-box: view-box;
-  transform-origin: 200px 140px;
-  transform: rotate(-18deg);
+@keyframes demo-pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
 }
-.demo-catapult-pompom {
-  opacity: 0;
+.demo-shake {
+  animation: demo-shake 0.12s linear infinite;
 }
-.demo-play .demo-catapult-arm {
-  animation: demo-catapult-arm 1.8s;
+@keyframes demo-shake {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 1px -1px;
+  }
 }
-.demo-play .demo-catapult-loaded {
-  animation: demo-catapult-loaded 1.8s;
+.demo-puff {
+  animation: demo-puff 0.5s ease-out infinite;
 }
-.demo-play .demo-catapult-pompom {
-  animation: demo-catapult-pompom 1.8s;
-  animation-timing-function: linear;
-}
-@keyframes demo-catapult-arm {
-  0% { transform: rotate(-18deg); }
-  35% { transform: rotate(14deg); }
-  45% { transform: rotate(-42deg); animation-timing-function: ease-out; }
-  100% { transform: rotate(-18deg); }
-}
-@keyframes demo-catapult-loaded {
-  0%, 43% { opacity: 1; }
-  44%, 97% { opacity: 0; }
-  100% { opacity: 1; }
-}
-@keyframes demo-catapult-pompom {
-  0%, 43% { opacity: 0; transform: translate(290px, 45px); }
-  44% { opacity: 1; transform: translate(290px, 45px); }
-  55% { transform: translate(318px, -20px); }
-  66% { transform: translate(345px, -48px); }
-  77% { transform: translate(370px, -40px); }
-  88% { opacity: 1; transform: translate(392px, 0px); }
-  100% { opacity: 0; transform: translate(410px, 60px); }
-}
-.demo-rocket-puff {
-  opacity: 0;
-}
-.demo-play .demo-rocket-body {
-  animation: demo-rocket 1.6s;
-}
-.demo-play .demo-rocket-puff {
-  animation: demo-rocket-puff 1.6s;
-}
-@keyframes demo-rocket {
-  0%, 18% { transform: translate(0, 0); opacity: 1; animation-timing-function: ease-in; }
-  65% { transform: translate(120px, -330px); opacity: 1; }
-  66% { transform: translate(0, 0); opacity: 0; }
-  100% { transform: translate(0, 0); opacity: 1; }
-}
-@keyframes demo-rocket-puff {
-  0% { opacity: 0; transform: translate(0, 0); }
-  10% { opacity: 0.9; }
-  40% { opacity: 0; transform: translate(-30px, 12px); }
-  100% { opacity: 0; }
-}
-.demo-hand-finger,
-.demo-hand-thumb {
-  transform-box: view-box;
-}
-.demo-play .demo-hand-finger {
-  animation: demo-hand-finger 2.2s;
-}
-.demo-play .demo-hand-thumb {
-  animation: demo-hand-thumb 2.2s;
-}
-.demo-play .demo-hand-tab {
-  animation: demo-hand-tab 2.2s;
-}
-@keyframes demo-hand-finger {
-  0%, 10% { transform: scaleY(1); }
-  40%, 70% { transform: scaleY(0.42); }
-  100% { transform: scaleY(1); }
-}
-@keyframes demo-hand-thumb {
-  0%, 10% { transform: rotate(0deg); }
-  40%, 70% { transform: rotate(32deg); }
-  100% { transform: rotate(0deg); }
-}
-@keyframes demo-hand-tab {
-  0%, 10% { transform: translateY(0); }
-  40%, 70% { transform: translateY(14px); }
-  100% { transform: translateY(0); }
+@keyframes demo-puff {
+  0% {
+    opacity: 0.9;
+    translate: 0 0;
+  }
+  100% {
+    opacity: 0;
+    translate: -18px 8px;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
-  .demo-play * {
-    animation-duration: 0.01ms !important;
+  .demo-pulse,
+  .demo-shake,
+  .demo-puff {
+    animation: none;
   }
 }
