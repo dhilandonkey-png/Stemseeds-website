@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ExternalLink, Globe2, Package, Sparkles } from "lucide-react";
+import { Globe2, Package, Sparkles } from "lucide-react";
 
 import { DonationImpact } from "@/components/donate/donation-impact";
 import { AnimatedCounter } from "@/components/ui/animated-counter";
-import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/ui/reveal";
-import { SectionHeading } from "@/components/ui/section-heading";
 import { donateCopy, donationImpact } from "@/content/donate";
 import { site, stats } from "@/content/site";
 
@@ -22,7 +20,7 @@ const impactIcons = [Package, Globe2, Sparkles] as const;
 export default function DonatePage() {
   return (
     <main id="main-content">
-      <section className="relative overflow-hidden px-6 pt-16 pb-14 sm:pt-24 sm:pb-20">
+      <section className="relative overflow-hidden px-6 pt-16 pb-6 sm:pt-24 sm:pb-8">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(17,120,134,0.1),transparent_46%)]"
@@ -40,24 +38,6 @@ export default function DonatePage() {
             <p className="mt-7 text-base leading-relaxed text-foreground/80 sm:text-lg">
               {donateCopy.body}
             </p>
-            <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <Button asChild size="lg">
-                <a
-                  href={site.donateHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {donateCopy.ctaLabel}
-                  <ExternalLink className="size-4" aria-hidden="true" />
-                </a>
-              </Button>
-              <Button asChild size="lg" variant="outline">
-                <Link href="/join-us">Or start a chapter</Link>
-              </Button>
-            </div>
-            <p className="mt-4 text-sm text-muted-foreground">
-              {donateCopy.note}
-            </p>
           </Reveal>
         </div>
       </section>
@@ -65,16 +45,25 @@ export default function DonatePage() {
       <section className="px-6 pb-16 sm:pb-24" aria-label="Donation impact">
         <div className="mx-auto max-w-6xl">
           <Reveal>
-            <SectionHeading
-              eyebrow="Your Impact"
-              title={donationImpact.title}
-              lead={donationImpact.lead}
-              align="center"
-            />
+            <p className="mx-auto max-w-2xl text-center text-base text-muted-foreground">
+              {donationImpact.lead}
+            </p>
           </Reveal>
-          <Reveal delay={0.1} className="mt-12">
+          <Reveal delay={0.1} className="mt-10">
             <DonationImpact />
           </Reveal>
+          <p className="mx-auto mt-8 max-w-2xl text-center text-sm text-muted-foreground">
+            {donateCopy.note}
+          </p>
+          <p className="mt-3 text-center text-sm text-muted-foreground">
+            Want to help another way?{" "}
+            <Link
+              href="/join-us"
+              className="font-semibold text-primary underline-offset-4 hover:underline"
+            >
+              Start a chapter
+            </Link>
+          </p>
         </div>
       </section>
 
