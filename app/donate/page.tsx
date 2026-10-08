@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ExternalLink, Globe2, Package, Sparkles } from "lucide-react";
 
+import { DonationImpact } from "@/components/donate/donation-impact";
 import { AnimatedCounter } from "@/components/ui/animated-counter";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/ui/reveal";
-import { donateCopy } from "@/content/donate";
+import { SectionHeading } from "@/components/ui/section-heading";
+import { donateCopy, donationImpact } from "@/content/donate";
 import { site, stats } from "@/content/site";
 
 export const metadata: Metadata = {
@@ -55,6 +57,22 @@ export default function DonatePage() {
             <p className="mt-4 text-sm text-muted-foreground">
               {donateCopy.note}
             </p>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="px-6 pb-16 sm:pb-24" aria-label="Donation impact">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Your Impact"
+              title={donationImpact.title}
+              lead={donationImpact.lead}
+              align="center"
+            />
+          </Reveal>
+          <Reveal delay={0.1} className="mt-12">
+            <DonationImpact />
           </Reveal>
         </div>
       </section>

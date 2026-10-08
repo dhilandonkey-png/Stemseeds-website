@@ -55,14 +55,12 @@ export function SiteFooter() {
           </h2>
           <ul className="mt-4 space-y-2.5">
             <li>
-              <a
+              <Link
                 href={site.applyHref}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="text-sm text-mint/90 transition-colors hover:text-fresh"
               >
                 Chapter Enrollment Form
-              </a>
+              </Link>
             </li>
             <li>
               <a

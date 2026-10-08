@@ -19,3 +19,20 @@ export const donateCopy = {
     },
   ],
 } as const;
+
+export const donationImpact = {
+  title: "See where your donation goes",
+  lead: "Each STEMKit costs about $5 to make. Pick an amount to see how many kits, and how many children, your gift reaches.",
+  costPerKit: 5,
+  presets: [10, 25, 50, 100, 250],
+  min: 5,
+  max: 500,
+  kitSummary:
+    "Every kit is hand-packed by student volunteers and delivered for free to children in hospitals and underserved communities.",
+  alsoIncluded: [
+    "Hospital-safe, latex-free materials",
+    "Step-by-step instruction manual with QR code tutorials",
+    "Science flyers that explain how each experiment works",
+    "Sealed STEMSeeds box, delivered by our chapters",
+  ],
+} as const;
