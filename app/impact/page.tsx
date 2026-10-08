@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { EventCard } from "@/components/impact/event-card";
 import { AnimatedCounter } from "@/components/ui/animated-counter";
+import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { impactEvents, impactIntro } from "@/content/impact";
@@ -103,6 +105,18 @@ export default function ImpactPage() {
               </Reveal>
             ))}
           </div>
+          <Reveal className="mt-20 flex flex-col items-center gap-4 rounded-3xl bg-mint/60 px-6 py-10 text-center">
+            <h2 className="font-display text-2xl text-foreground sm:text-3xl">
+              Want STEMKits for your kids?
+            </h2>
+            <p className="max-w-xl text-base text-muted-foreground">
+              Hospitals, schools, and community organizations can request free
+              kits, assembled and delivered by our student chapters.
+            </p>
+            <Button asChild size="lg">
+              <Link href="/request-kits">Request STEMKits</Link>
+            </Button>
+          </Reveal>
         </div>
       </section>
     </main>

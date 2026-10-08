@@ -140,6 +140,13 @@ export function SiteHeader() {
                 Donate
               </Link>
             </Button>
+            <Link
+              href="/request-kits"
+              onClick={closeMenu}
+              className="mt-1 rounded-xl px-3 py-2 text-center text-sm font-semibold text-primary"
+            >
+              Hospital or school? Request kits →
+            </Link>
           </div>
         </nav>
       </div>
