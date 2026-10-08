@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Mail } from "lucide-react";
 
+import { KitRequestForm } from "@/components/request-kits/kit-request-form";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/ui/reveal";
 import { requestKits, site } from "@/content/site";
@@ -10,10 +10,6 @@ export const metadata: Metadata = {
   description:
     "Hospitals, schools, and community organizations can request free STEMSeeds STEMKits for the children they serve.",
 };
-
-const mailtoHref = `mailto:${site.email}?subject=${encodeURIComponent(
-  requestKits.emailSubject,
-)}&body=${encodeURIComponent(requestKits.emailBody)}`;
 
 export default function RequestKitsPage() {
   return (
@@ -38,14 +34,11 @@ export default function RequestKitsPage() {
             </p>
             <div className="mt-9 flex justify-center">
               <Button asChild size="lg">
-                <a href={mailtoHref}>
-                  <Mail aria-hidden="true" />
-                  Email a Kit Request
-                </a>
+                <a href="#request-form">Request STEMKits</a>
               </Button>
             </div>
             <p className="mt-3 text-sm text-muted-foreground">
-              Or write to us directly at{" "}
+              Prefer email? Write to us at{" "}
               <a
                 href={`mailto:${site.email}`}
                 className="font-semibold text-primary underline-offset-4 hover:underline"
@@ -79,25 +72,20 @@ export default function RequestKitsPage() {
         </div>
       </section>
 
-      <section className="px-6 py-16 sm:py-20">
-        <Reveal className="mx-auto max-w-2xl">
-          <h2 className="font-display text-2xl text-foreground sm:text-3xl">
-            What to include in your request
-          </h2>
-          <ul className="mt-6 space-y-3 text-base text-foreground/80">
-            {requestKits.include.map((item) => (
-              <li key={item} className="flex gap-3">
-                <span aria-hidden="true" className="text-fresh">
-                  ✓
-                </span>
-                {item}
-              </li>
-            ))}
-          </ul>
-          <p className="mt-8 rounded-2xl bg-aqua/35 p-5 text-sm leading-relaxed text-foreground/80">
-            {requestKits.note}
-          </p>
-        </Reveal>
+      <section id="request-form" className="scroll-mt-24 px-6 py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl">
+          <Reveal>
+            <h2 className="text-center font-display text-3xl text-foreground sm:text-4xl">
+              Request form
+            </h2>
+            <p className="mt-4 text-center text-base text-muted-foreground">
+              {requestKits.note}
+            </p>
+          </Reveal>
+          <Reveal delay={0.1} className="mt-10">
+            <KitRequestForm />
+          </Reveal>
+        </div>
       </section>
     </main>
   );

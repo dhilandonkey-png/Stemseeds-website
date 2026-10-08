@@ -58,7 +58,7 @@ export default function StemKitPage() {
                 >
                   <div
                     className={cn(
-                      "relative aspect-[4/3.6] rounded-3xl bg-white p-6 shadow-[0_18px_44px_rgba(8,62,72,0.14)] ring-1 ring-ink/10 sm:p-10",
+                      "relative rounded-3xl bg-white p-5 shadow-[0_18px_44px_rgba(8,62,72,0.14)] ring-1 ring-ink/10 sm:p-7",
                       index % 2 === 1 && "lg:order-2",
                     )}
                   >
