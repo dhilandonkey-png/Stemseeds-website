@@ -8,12 +8,40 @@ import { site } from "@/content/site";
 
 type Status = "idle" | "sending" | "sent" | "error";
 
-/** Formats digits as 123-456-7890 while typing. */
-function formatPhone(value: string) {
-  const digits = value.replace(/\D/g, "").slice(0, 10);
-  if (digits.length <= 3) return digits;
-  if (digits.length <= 6) return `${digits.slice(0, 3)}-${digits.slice(3)}`;
-  return `${digits.slice(0, 3)}-${digits.slice(3, 6)}-${digits.slice(6)}`;
+/**
+ * Phone formats for the countries we work in. `groups` are the digit counts
+ * between dashes, e.g. [3, 3, 4] gives 214-555-1234.
+ */
+const COUNTRIES = [
+  { name: "United States", code: "+1", groups: [3, 3, 4] },
+  { name: "Canada", code: "+1", groups: [3, 3, 4] },
+  { name: "India", code: "+91", groups: [5, 5] },
+  { name: "Bangladesh", code: "+880", groups: [4, 6] },
+  { name: "Philippines", code: "+63", groups: [3, 3, 4] },
+  { name: "Sweden", code: "+46", groups: [2, 3, 2, 2] },
+  { name: "China", code: "+86", groups: [3, 4, 4] },
+  { name: "Other", code: "", groups: [] as number[] },
+] as const;
+
+type Country = (typeof COUNTRIES)[number];
+
+/** Adds dashes in the country's pattern while typing. */
+function formatPhone(value: string, country: Country) {
+  if (country.groups.length === 0) return value.replace(/[^\d\s+()-]/g, "");
+  const max = country.groups.reduce((sum, size) => sum + size, 0);
+  const digits = value.replace(/\D/g, "").slice(0, max);
+  const parts: string[] = [];
+  let index = 0;
+  for (const size of country.groups) {
+    if (index >= digits.length) break;
+    parts.push(digits.slice(index, index + size));
+    index += size;
+  }
+  return parts.join("-");
+}
+
+function phoneExample(country: Country) {
+  return country.groups.map((size) => "X".repeat(size)).join("-");
 }
 
 const inputClass =
@@ -52,6 +80,10 @@ function Field({
  */
 export function KitRequestForm() {
   const [status, setStatus] = useState<Status>("idle");
+  const [countryName, setCountryName] = useState<string>(COUNTRIES[0].name);
+  const [phone, setPhone] = useState("");
+  const country =
+    COUNTRIES.find((option) => option.name === countryName) ?? COUNTRIES[0];
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -67,6 +99,7 @@ export function KitRequestForm() {
         },
         body: JSON.stringify({
           ...data,
+          phone: phone ? `${country.code} ${phone}`.trim() : "",
           _subject: `STEMKit request from ${data.organization}`,
           _template: "table",
           _captcha: "false",
@@ -77,6 +110,7 @@ export function KitRequestForm() {
         throw new Error("Request failed");
       }
       form.reset();
+      setPhone("");
       setStatus("sent");
     } catch {
       setStatus("error");
@@ -139,7 +173,7 @@ export function KitRequestForm() {
             <option>Other</option>
           </select>
         </Field>
-        <Field label="City and state (or country)" required>
+        <Field label="City and state/region" required>
           <input
             name="location"
             required
@@ -169,22 +203,49 @@ export function KitRequestForm() {
             className={inputClass}
           />
         </Field>
-        <Field label="Phone">
-          <input
-            name="phone"
-            type="tel"
-            autoComplete="tel"
-            inputMode="tel"
-            maxLength={14}
-            pattern="\d{3}-\d{3}-\d{4}"
-            title="10-digit phone number, like 123-456-7890"
+        <Field label="Country" required>
+          <select
+            name="country"
+            required
+            value={countryName}
             onChange={(event) => {
-              event.currentTarget.value = formatPhone(
-                event.currentTarget.value,
-              );
+              setCountryName(event.target.value);
+              setPhone("");
             }}
             className={inputClass}
-          />
+          >
+            {COUNTRIES.map((option) => (
+              <option key={option.name}>{option.name}</option>
+            ))}
+          </select>
+        </Field>
+        <Field label="Phone">
+          <div className="mt-2 flex items-stretch gap-2">
+            {country.code ? (
+              <span className="flex items-center rounded-xl border border-input bg-muted px-3 text-base text-muted-foreground">
+                {country.code}
+              </span>
+            ) : null}
+            <input
+              type="tel"
+              autoComplete="tel-national"
+              inputMode="tel"
+              value={phone}
+              onChange={(event) =>
+                setPhone(formatPhone(event.target.value, country))
+              }
+              aria-describedby="phone-format"
+              className={inputClass.replace("mt-2 ", "")}
+            />
+          </div>
+          {country.groups.length > 0 ? (
+            <span
+              id="phone-format"
+              className="mt-1.5 block text-xs font-normal text-muted-foreground"
+            >
+              Format: {phoneExample(country)}
+            </span>
+          ) : null}
         </Field>
         <Field label="How many STEMKits? (1 kit per child)" required>
           <input
