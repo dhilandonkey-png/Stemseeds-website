@@ -4,32 +4,31 @@ import { useState, type FormEvent, type ReactNode } from "react";
 import { CheckCircle2, Loader2 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import {
+  chapterCountryCodes,
+  countries,
+  type CountryPhone,
+} from "@/content/countries";
 import { site } from "@/content/site";
 
 type Status = "idle" | "sending" | "sent" | "error";
 
-/**
- * Phone formats for the countries we work in. `groups` are the digit counts
- * between dashes, e.g. [3, 3, 4] gives 214-555-1234.
- */
-const COUNTRIES = [
-  { name: "United States", code: "+1", groups: [3, 3, 4] },
-  { name: "Canada", code: "+1", groups: [3, 3, 4] },
-  { name: "India", code: "+91", groups: [5, 5] },
-  { name: "Bangladesh", code: "+880", groups: [4, 6] },
-  { name: "Philippines", code: "+63", groups: [3, 3, 4] },
-  { name: "Sweden", code: "+46", groups: [2, 3, 2, 2] },
-  { name: "China", code: "+86", groups: [3, 4, 4] },
-  { name: "Other", code: "", groups: [] as number[] },
-] as const;
+type Country = CountryPhone;
 
-type Country = (typeof COUNTRIES)[number];
+const byCode = new Map(countries.map((country) => [country.iso, country]));
+const chapterCountries = chapterCountryCodes
+  .map((code) => byCode.get(code))
+  .filter((country): country is Country => Boolean(country));
+const otherCountries = countries.filter(
+  (country) =>
+    !(chapterCountryCodes as readonly string[]).includes(country.iso),
+);
 
 /** Adds dashes in the country's pattern while typing. */
 function formatPhone(value: string, country: Country) {
-  if (country.groups.length === 0) return value.replace(/[^\d\s+()-]/g, "");
   const max = country.groups.reduce((sum, size) => sum + size, 0);
-  const digits = value.replace(/\D/g, "").slice(0, max);
+  const digits = value.replace(/\D/g, "").slice(0, max || 15);
+  if (country.groups.length === 0) return digits;
   const parts: string[] = [];
   let index = 0;
   for (const size of country.groups) {
@@ -80,10 +79,9 @@ function Field({
  */
 export function KitRequestForm() {
   const [status, setStatus] = useState<Status>("idle");
-  const [countryName, setCountryName] = useState<string>(COUNTRIES[0].name);
+  const [countryCode, setCountryCode] = useState<string>("US");
   const [phone, setPhone] = useState("");
-  const country =
-    COUNTRIES.find((option) => option.name === countryName) ?? COUNTRIES[0];
+  const country = byCode.get(countryCode) ?? chapterCountries[0];
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -99,7 +97,8 @@ export function KitRequestForm() {
         },
         body: JSON.stringify({
           ...data,
-          phone: phone ? `${country.code} ${phone}`.trim() : "",
+          country: country.name,
+          phone: phone ? `${country.dial} ${phone}`.trim() : "",
           _subject: `STEMKit request from ${data.organization}`,
           _template: "table",
           _captcha: "false",
@@ -207,25 +206,34 @@ export function KitRequestForm() {
           <select
             name="country"
             required
-            value={countryName}
+            value={countryCode}
             onChange={(event) => {
-              setCountryName(event.target.value);
+              setCountryCode(event.target.value);
               setPhone("");
             }}
             className={inputClass}
           >
-            {COUNTRIES.map((option) => (
-              <option key={option.name}>{option.name}</option>
-            ))}
+            <optgroup label="Where we have chapters">
+              {chapterCountries.map((option) => (
+                <option key={option.iso} value={option.iso}>
+                  {option.name}
+                </option>
+              ))}
+            </optgroup>
+            <optgroup label="All countries">
+              {otherCountries.map((option) => (
+                <option key={option.iso} value={option.iso}>
+                  {option.name}
+                </option>
+              ))}
+            </optgroup>
           </select>
         </Field>
         <Field label="Phone">
           <div className="mt-2 flex items-stretch gap-2">
-            {country.code ? (
-              <span className="flex items-center rounded-xl border border-input bg-muted px-3 text-base text-muted-foreground">
-                {country.code}
-              </span>
-            ) : null}
+            <span className="flex items-center rounded-xl border border-input bg-muted px-3 text-base text-muted-foreground">
+              {country.dial}
+            </span>
             <input
               type="tel"
               autoComplete="tel-national"
