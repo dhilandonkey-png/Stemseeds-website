@@ -4,8 +4,10 @@ import Link from "next/link";
 import { PartnersSection } from "@/components/home/partners";
 import { SponsorsSection } from "@/components/home/sponsors";
 import { AnimatedCounter } from "@/components/ui/animated-counter";
+import { SectionHeading } from "@/components/ui/section-heading";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/ui/reveal";
+import { ourStory } from "@/content/home";
 import { site, stats } from "@/content/site";
 import { aboutIntro } from "@/content/team";
 
@@ -72,12 +74,30 @@ export default function AboutPage() {
               </div>
             ))}
           </dl>
+          <p className="mt-3 text-center text-xs text-muted-foreground">
+            As of {site.statsAsOf}
+          </p>
         </Reveal>
+      </section>
+
+      <section
+        id="our-story"
+        className="scroll-mt-24 bg-mint/50 px-6 py-16 sm:py-20"
+      >
+        <div className="mx-auto max-w-3xl">
+          <Reveal>
+            <SectionHeading eyebrow={ourStory.eyebrow} title={ourStory.title} />
+            <div className="mt-6 space-y-5 text-base leading-relaxed text-foreground/80 sm:text-[1.0625rem]">
+              {ourStory.paragraphs.map((paragraph) => (
+                <p key={paragraph.slice(0, 32)}>{paragraph}</p>
+              ))}
+            </div>
+          </Reveal>
+        </div>
       </section>
 
       <PartnersSection />
       <SponsorsSection />
-
     </main>
   );
 }

@@ -1,12 +1,14 @@
 export const whoWeAre = {
   eyebrow: "Who We Are",
   title: "Helping kids feel like kids again",
-  paragraphs: [
-    "STEMSeeds is a student-led nonprofit organization focused on bringing hands-on STEM education to children of all backgrounds, including pediatric patients and underserved communities. Our team designs and packages custom 3-in-1 STEM activity kits called STEMKits, each containing multiple hands-on experiments that allow children to explore scientific concepts through building, testing, and play.",
-    "What matters most to us is helping kids feel like kids again. For children facing long or difficult hospital stays, our STEM kits offer a sense of normalcy, curiosity, and joy during moments that are often stressful or isolating.",
-    "Founded by high school students in Frisco, Texas, STEMSeeds has grown from a small local idea into a global initiative. So far, we have distributed over 900 STEM kits and raised more than $4K, funded by generous donors and student-run fundraisers like our volleyball and pickleball tournaments. Our kits have reached children across the DFW Metroplex and Michigan, as well as in India, Bangladesh, Sweden, and Canada.",
-    "As our impact continues to grow, new chapters are currently being developed in the Philippines and China, allowing us to reach even more children around the world and remind them that learning and creativity do not stop, even in the hardest moments.",
+  intro:
+    "STEMSeeds is a student-led 501(c)(3) nonprofit founded in Frisco, Texas. We design 3-in-1 STEMKits packed with hands-on experiments and deliver them to pediatric patients and underserved communities, so kids in difficult moments can feel like kids again.",
+  facts: [
+    { value: "945+", label: "STEMKits delivered to hospitals and schools" },
+    { value: "32", label: "student-led chapters in 6 countries" },
+    { value: "2", label: "city recognitions, from Frisco and Mansfield" },
   ],
+  link: { label: "Read our full story", href: "/about#our-story" },
   images: [
     {
       src: "/images/who-we-are/whoarewe2.avif",
@@ -26,6 +28,17 @@ export const whoWeAre = {
       width: 533,
       height: 692,
     },
+  ],
+} as const;
+
+export const ourStory = {
+  eyebrow: "Our Story",
+  title: "From a small local idea to a global initiative",
+  paragraphs: [
+    "STEMSeeds designs and packages custom 3-in-1 STEM activity kits called STEMKits, each containing multiple hands-on experiments that let children explore scientific concepts through building, testing, and play.",
+    "What matters most to us is helping kids feel like kids again. For children facing long or difficult hospital stays, our STEMKits offer a sense of normalcy, curiosity, and joy during moments that are often stressful or isolating.",
+    "Founded by high school students in Frisco, Texas, STEMSeeds has distributed more than 900 STEMKits and raised more than $4K, funded by generous donors and student-run fundraisers like our volleyball and pickleball tournaments. Our kits have reached children across the DFW Metroplex and Michigan, as well as in India, Bangladesh, Sweden, and Canada.",
+    "Today we have chapters in six countries: the United States, Canada, India, Bangladesh, Sweden, and the Philippines. A new chapter is being developed in China, so we can keep reminding children that learning and creativity do not stop, even in the hardest moments.",
   ],
 } as const;
 
@@ -85,7 +98,10 @@ export const partnersSection = {
   lead: "At STEMSeeds, we proudly partner with hospitals, nonprofits, schools, and community organizations that share our vision of bringing science within reach for every child. Through these collaborations, we've helped hundreds of young learners rediscover joy, curiosity, and confidence, giving them moments to laugh, explore, and feel like kids again beyond the IVs and monitors.",
   logos: [
     { src: "/images/partners/partner1.avif", alt: "Children's Health" },
-    { src: "/images/partners/partner2.avif", alt: "Scottish Rite for Children" },
+    {
+      src: "/images/partners/partner2.avif",
+      alt: "Scottish Rite for Children",
+    },
     { src: "/images/partners/partner3.avif", alt: "Pediatric People" },
     {
       src: "/images/partners/partner4.avif",
@@ -105,7 +121,7 @@ export const partnersSection = {
 export const sponsorsSection = {
   eyebrow: "Our Sponsors",
   title: "The support behind every kit",
-  lead: "Our sponsors make this work possible. Their support directly funds STEM kits, expands our reach, and ensures that more children can experience moments of joy, curiosity, and learning when they need it most.",
+  lead: "Our sponsors make this work possible. Their support directly funds STEMKits, expands our reach, and ensures that more children can experience moments of joy, curiosity, and learning when they need it most.",
   logos: [
     {
       src: "/images/sponsors/sponsor1.avif",

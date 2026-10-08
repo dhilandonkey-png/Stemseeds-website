@@ -5,7 +5,7 @@ import { AnimatedCounter } from "@/components/ui/animated-counter";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { impactEvents, impactIntro } from "@/content/impact";
-import { stats } from "@/content/site";
+import { site, stats } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Impact",
@@ -61,6 +61,9 @@ export default function ImpactPage() {
               </div>
             ))}
           </dl>
+          <p className="mt-3 text-center text-xs text-muted-foreground">
+            As of {site.statsAsOf}
+          </p>
         </Reveal>
       </section>
 

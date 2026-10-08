@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -20,11 +22,34 @@ export function WhoWeAreSection() {
       <div className="relative mx-auto grid max-w-6xl items-center gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
         <Reveal>
           <SectionHeading eyebrow={whoWeAre.eyebrow} title={whoWeAre.title} />
-          <div className="mt-6 space-y-5 text-base leading-relaxed text-foreground/80 sm:text-[1.0625rem]">
-            {whoWeAre.paragraphs.map((paragraph) => (
-              <p key={paragraph.slice(0, 32)}>{paragraph}</p>
+          <p className="mt-6 text-base leading-relaxed text-foreground/80 sm:text-lg">
+            {whoWeAre.intro}
+          </p>
+          <dl className="mt-8 grid gap-4 sm:grid-cols-3">
+            {whoWeAre.facts.map((fact) => (
+              <div
+                key={fact.label}
+                className="flex flex-col-reverse rounded-2xl border border-border bg-card p-4 shadow-[0_8px_24px_rgba(8,62,72,0.05)]"
+              >
+                <dt className="mt-1 text-sm leading-snug text-muted-foreground">
+                  {fact.label}
+                </dt>
+                <dd className="font-sans text-3xl font-bold tracking-tight text-primary">
+                  {fact.value}
+                </dd>
+              </div>
             ))}
-          </div>
+          </dl>
+          <Link
+            href={whoWeAre.link.href}
+            className="group mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary underline-offset-4 hover:underline"
+          >
+            {whoWeAre.link.label}
+            <ArrowRight
+              aria-hidden="true"
+              className="size-4 transition-transform group-hover:translate-x-0.5"
+            />
+          </Link>
         </Reveal>
 
         <Reveal delay={0.15} className="relative">

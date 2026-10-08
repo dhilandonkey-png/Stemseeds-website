@@ -13,7 +13,7 @@ import { site, stats } from "@/content/site";
 export const metadata: Metadata = {
   title: "Donate",
   description:
-    "Support STEMSeeds: your donation funds the distribution of our signature 3-in-1 STEM kits to disadvantaged children across the globe.",
+    "Support STEMSeeds: your donation funds the distribution of our signature 3-in-1 STEMKits to disadvantaged children across the globe.",
 };
 
 const impactIcons = [Package, Globe2, Sparkles] as const;
@@ -122,6 +122,9 @@ export default function DonatePage() {
               </div>
             ))}
           </dl>
+          <p className="mt-3 text-center text-xs text-muted-foreground">
+            As of {site.statsAsOf}
+          </p>
         </Reveal>
       </section>
     </main>

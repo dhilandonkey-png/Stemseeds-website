@@ -1,6 +1,6 @@
 export const joinIntro = {
   question: "Interested in making a difference through STEM education?",
-  body: "By starting a STEM Seeds Chapter, you'll join a network of passionate students dedicated to bringing hands-on STEM learning to underprivileged communities and hospitalized children. As a chapter leader, you'll receive step-by-step guidance on creating and distributing STEM kits, access to exclusive resources, and support from the STEM Seeds community. Enroll today and help us grow the future of STEM!",
+  body: "By starting a STEMSeeds chapter, you'll join a network of passionate students dedicated to bringing hands-on STEM learning to underprivileged communities and hospitalized children. As a chapter leader, you'll receive step-by-step guidance on creating and distributing STEM kits, access to exclusive resources, and support from the STEMSeeds community. Enroll today and help us grow the future of STEM!",
 } as const;
 
 export const joinSteps = [
@@ -94,3 +94,36 @@ export const chapterNetwork = {
     "Canada",
   ],
 } as const;
+
+export const chapterFaq = [
+  {
+    question: "Who can start a chapter?",
+    answer:
+      "Any student who wants to bring hands-on STEM to kids in their community. Most of our chapters are run by high school students, and we have chapters across the United States and in Canada, India, Bangladesh, Sweden, and the Philippines.",
+  },
+  {
+    question: "Do I need a team to apply?",
+    answer:
+      "No. You can apply on your own. Many chapters start with one or two founders and grow into a small team of officers, such as outreach, marketing, and finance, as they plan more deliveries.",
+  },
+  {
+    question: "How much does it cost to start?",
+    answer:
+      "Applying is free. Each STEMKit costs about $5 in materials, and chapters raise money through donations and student-run fundraisers like volleyball and pickleball tournaments.",
+  },
+  {
+    question: "How much time does it take?",
+    answer:
+      "It's flexible. Your chapter sets its own schedule around each kit drive: a few sessions to assemble kits, then a delivery to a local hospital or school.",
+  },
+  {
+    question: "What happens after I apply?",
+    answer:
+      "Our team reviews your application and reaches out by email with next steps, resources, and how to get your chapter started.",
+  },
+  {
+    question: "What support will my chapter get?",
+    answer:
+      "You'll get our kit designs, instruction manuals and science flyers, a step-by-step guide to assembling kits and delivering them to hospitals, and help from the STEMSeeds team. Your chapter is also featured on our Team page and Instagram.",
+  },
+] as const;

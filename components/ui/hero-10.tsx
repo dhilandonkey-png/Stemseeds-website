@@ -114,7 +114,11 @@ export function Hero10({
       </div>
 
       {marqueePhotos.length > 0 ? (
-        <PhotoMarquee photos={marqueePhotos} speed={46} className="-mx-6 mt-16" />
+        <PhotoMarquee
+          photos={marqueePhotos}
+          speed={46}
+          className="-mx-6 mt-16"
+        />
       ) : null}
     </section>
   );

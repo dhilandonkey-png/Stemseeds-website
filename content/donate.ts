@@ -1,13 +1,13 @@
 export const donateCopy = {
   eyebrow: "Donate",
   title: "Support Our Cause",
-  body: "We've inspired hundreds of young scientists, and with your help, we can inspire countless more! Your donation funds the distribution of more of our signature 3-in-1 STEM kits to disadvantaged children across the globe—making the joy of STEM accessible to all.",
+  body: "We've inspired hundreds of young scientists, and with your help, we can inspire countless more! Your donation funds the distribution of more of our signature 3-in-1 STEMKits to disadvantaged children across the globe—making the joy of STEM accessible to all.",
   ctaLabel: "Donate Now",
-  note: "Donations are processed securely through our GoFundMe campaign.",
+  note: "Donations are processed securely through our GoFundMe campaign. STEMSeeds is a 501(c)(3) nonprofit; for a receipt or our organizational details, email stem.seeds.org@gmail.com.",
   impactPoints: [
     {
       title: "Funds more STEMKits",
-      text: "Your donation funds the distribution of more of our signature 3-in-1 STEM kits.",
+      text: "Your donation funds the distribution of more of our signature 3-in-1 STEMKits.",
     },
     {
       title: "Reaches children across the globe",

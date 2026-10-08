@@ -55,11 +55,21 @@ export function SiteFooter() {
           </h2>
           <ul className="mt-4 space-y-2.5">
             <li>
-              <Link
+              <a
                 href={site.applyHref}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-sm text-mint/90 transition-colors hover:text-fresh"
               >
                 Chapter Enrollment Form
+              </a>
+            </li>
+            <li>
+              <Link
+                href="/request-kits"
+                className="text-sm text-mint/90 transition-colors hover:text-fresh"
+              >
+                Request Kits
               </Link>
             </li>
             <li>
@@ -82,14 +92,33 @@ export function SiteFooter() {
                 <InstagramIcon />@{site.instagram.handle}
               </a>
             </li>
+            <li>
+              <a
+                href={`mailto:${site.email}`}
+                className="text-sm break-all text-mint/90 transition-colors hover:text-fresh"
+              >
+                {site.email}
+              </a>
+            </li>
           </ul>
         </div>
       </div>
       <div className="border-t border-mint/10 px-6 py-6">
-        <p className="mx-auto max-w-6xl text-xs text-aqua/60">
-          &copy; {new Date().getFullYear()} {site.name}. A student-led
-          501(c)(3) nonprofit organization.
-        </p>
+        <div className="mx-auto flex max-w-6xl flex-col gap-2 text-xs text-aqua/60 sm:flex-row sm:justify-between">
+          <p>
+            &copy; {new Date().getFullYear()} {site.name}. A student-led
+            501(c)(3) nonprofit organization based in Frisco, Texas.
+          </p>
+          <p>
+            For donation receipts or organizational information, email{" "}
+            <a
+              href={`mailto:${site.email}`}
+              className="underline underline-offset-2 hover:text-fresh"
+            >
+              {site.email}
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
