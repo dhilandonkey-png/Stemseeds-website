@@ -8,7 +8,7 @@ import {
   Users,
 } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
+import { ChapterApplicationForm } from "@/components/join/chapter-application-form";
 import { Hero10 } from "@/components/ui/hero-10";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -50,7 +50,7 @@ export default function JoinUsPage() {
         primaryCTA={{
           ctaEnabled: true,
           text: "Apply Now",
-          link: site.applyHref,
+          link: "#apply",
         }}
         secondaryCTA={{
           ctaEnabled: true,
@@ -107,7 +107,10 @@ export default function JoinUsPage() {
               align="center"
             />
           </Reveal>
-          <Reveal delay={0.1} className="mt-8 flex flex-wrap justify-center gap-3">
+          <Reveal
+            delay={0.1}
+            className="mt-8 flex flex-wrap justify-center gap-3"
+          >
             {chapterNetwork.countries.map((country) => (
               <span
                 key={country}
@@ -120,9 +123,12 @@ export default function JoinUsPage() {
         </div>
       </section>
 
-      <section className="bg-aqua/35 px-6 py-20 sm:py-28">
-        <div className="mx-auto max-w-3xl text-center">
-          <Reveal>
+      <section
+        id="apply"
+        className="scroll-mt-24 bg-aqua/35 px-6 py-20 sm:py-28"
+      >
+        <div className="mx-auto max-w-3xl">
+          <Reveal className="text-center">
             <p className="flex items-center justify-center gap-2.5 text-xs font-semibold tracking-[0.22em] text-primary uppercase">
               <span aria-hidden="true" className="h-px w-6 bg-fresh" />
               Chapter Enrollment
@@ -134,27 +140,21 @@ export default function JoinUsPage() {
             <p className="mt-6 text-base leading-relaxed text-foreground/80 sm:text-lg">
               {joinIntro.body}
             </p>
-            <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <Button asChild size="lg">
-                <a
-                  href={site.applyHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Apply to Start a Chapter
-                </a>
-              </Button>
-              <Button asChild size="lg" variant="outline">
-                <a
-                  href={site.instagram.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Ask us on Instagram
-                </a>
-              </Button>
-            </div>
           </Reveal>
+          <Reveal delay={0.1} className="mt-10">
+            <ChapterApplicationForm />
+          </Reveal>
+          <p className="mt-6 text-center text-sm text-muted-foreground">
+            Questions first?{" "}
+            <a
+              href={site.instagram.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-primary underline-offset-4 hover:underline"
+            >
+              Message us on Instagram
+            </a>
+          </p>
         </div>
       </section>
     </main>

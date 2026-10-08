@@ -7,8 +7,10 @@ export const site = {
     handle: "stemseeds.initiative",
     href: "https://www.instagram.com/stemseeds.initiative",
   },
-  applyHref:
-    "https://docs.google.com/forms/d/e/1FAIpQLScN6nRW2X84GEM7-O82CPEoxv8j3EBt0-WIJEweOy6tfe9wfA/viewform?usp=sharing",
+  applyHref: "/join-us#apply",
+  /** Google Form that stores chapter applications (our on-site form submits to it). */
+  chapterFormHref:
+    "https://docs.google.com/forms/d/e/1FAIpQLScN6nRW2X84GEM7-O82CPEoxv8j3EBt0-WIJEweOy6tfe9wfA/viewform",
   donateHref:
     "https://www.gofundme.com/f/stemseeds-help-sponsor-underprivileged-kids-with-stem-kits",
   logo: {
