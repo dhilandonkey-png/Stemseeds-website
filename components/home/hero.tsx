@@ -79,6 +79,15 @@ export function HomeHero() {
             </Link>
           </Button>
         </div>
+        <p className="mt-5 text-sm text-muted-foreground">
+          Hospital, school, or organization?{" "}
+          <Link
+            href="/request-kits"
+            className="font-semibold text-primary underline-offset-4 hover:underline"
+          >
+            Request free STEMKits →
+          </Link>
+        </p>
 
         <dl
           aria-label="Our impact in numbers"
