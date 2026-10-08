@@ -11,6 +11,7 @@ import { donateCopy, donationImpact } from "@/content/donate";
 import { site, stats } from "@/content/site";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/donate" },
   title: "Donate",
   description:
     "Support STEMSeeds: your donation funds the distribution of our signature 3-in-1 STEMKits to disadvantaged children across the globe.",

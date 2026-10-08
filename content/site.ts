@@ -1,6 +1,7 @@
 export const site = {
   name: "STEMSeeds",
   tagline: "Where Learning Takes Root",
+  url: "https://www.stemseeds.net",
   description:
     "STEMSeeds is a student-led nonprofit organization focused on bringing hands-on STEM education to children of all backgrounds, including pediatric patients and underserved communities.",
   instagram: {

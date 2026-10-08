@@ -20,6 +20,7 @@ import { site, stats } from "@/content/site";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/stem-kit" },
   title: "STEM Kit",
   description:
     "Each STEMSeeds kit is a hand-designed 3-in-1 experiment kit: a paper rocket, a pom-pom catapult, and a robotic hand, with hospital-safe materials and educational flyers.",

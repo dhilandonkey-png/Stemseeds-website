@@ -23,6 +23,7 @@ import {
 import { site } from "@/content/site";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/join-us" },
   title: "Join Us",
   description:
     "Start a STEMSeeds chapter: join a network of passionate students bringing hands-on STEM learning to underprivileged communities and hospitalized children.",

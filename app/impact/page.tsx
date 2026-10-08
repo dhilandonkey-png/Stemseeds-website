@@ -10,6 +10,7 @@ import { impactEvents, impactIntro } from "@/content/impact";
 import { site, stats } from "@/content/site";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/impact" },
   title: "Impact",
   description:
     "See every STEMSeeds event: hospital deliveries, new chapters, and recognitions, with photos and dates.",

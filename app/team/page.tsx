@@ -14,6 +14,7 @@ import {
 } from "@/content/team";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/team" },
   title: "Team",
   description:
     "Meet the STEMSeeds team: our founders, core team, and the chapter leaders bringing hands-on STEM to kids across the United States and around the world.",
