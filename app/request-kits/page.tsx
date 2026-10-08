@@ -6,6 +6,7 @@ import { Reveal } from "@/components/ui/reveal";
 import { requestKits, site } from "@/content/site";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/request-kits" },
   title: "Request Kits",
   description:
     "Hospitals, schools, and community organizations can request free STEMSeeds STEMKits for the children they serve.",

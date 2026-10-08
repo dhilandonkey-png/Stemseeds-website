@@ -12,6 +12,7 @@ import { site, stats } from "@/content/site";
 import { aboutIntro } from "@/content/team";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about" },
   title: "About",
   description:
     "STEMSeeds is a student-founded 501(c)(3) nonprofit organization based in Frisco, Texas, led by Co-Founders Ritvik Avula and Rayhan Raja alongside a team of more than 50 students.",
