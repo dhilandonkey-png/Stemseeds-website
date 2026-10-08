@@ -8,11 +8,12 @@ import {
   Users,
 } from "lucide-react";
 
-import { ChapterApplicationForm } from "@/components/join/chapter-application-form";
+import { Button } from "@/components/ui/button";
 import { Hero10 } from "@/components/ui/hero-10";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
 import {
+  chapterFaq,
   chapterNetwork,
   joinCta,
   joinFanImages,
@@ -50,7 +51,7 @@ export default function JoinUsPage() {
         primaryCTA={{
           ctaEnabled: true,
           text: "Apply Now",
-          link: "#apply",
+          link: site.applyHref,
         }}
         secondaryCTA={{
           ctaEnabled: true,
@@ -124,11 +125,43 @@ export default function JoinUsPage() {
       </section>
 
       <section
-        id="apply"
-        className="scroll-mt-24 bg-aqua/35 px-6 py-20 sm:py-28"
+        className="bg-mint/50 px-6 py-20 sm:py-24"
+        aria-label="Chapter FAQ"
       >
         <div className="mx-auto max-w-3xl">
-          <Reveal className="text-center">
+          <Reveal>
+            <SectionHeading
+              eyebrow="FAQ"
+              title="Questions about starting a chapter"
+              align="center"
+            />
+          </Reveal>
+          <div className="mt-10 space-y-3">
+            {chapterFaq.map((item, index) => (
+              <Reveal key={item.question} delay={index * 0.04}>
+                <details className="group rounded-2xl border border-border bg-card px-5 py-4 shadow-[0_8px_24px_rgba(8,62,72,0.05)] open:bg-card">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-lg text-foreground [&::-webkit-details-marker]:hidden">
+                    {item.question}
+                    <span
+                      aria-hidden="true"
+                      className="text-2xl leading-none text-primary transition-transform group-open:rotate-45"
+                    >
+                      +
+                    </span>
+                  </summary>
+                  <p className="mt-3 text-base leading-relaxed text-foreground/75">
+                    {item.answer}
+                  </p>
+                </details>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-aqua/35 px-6 py-20 sm:py-28">
+        <div className="mx-auto max-w-3xl text-center">
+          <Reveal>
             <p className="flex items-center justify-center gap-2.5 text-xs font-semibold tracking-[0.22em] text-primary uppercase">
               <span aria-hidden="true" className="h-px w-6 bg-fresh" />
               Chapter Enrollment
@@ -140,21 +173,27 @@ export default function JoinUsPage() {
             <p className="mt-6 text-base leading-relaxed text-foreground/80 sm:text-lg">
               {joinIntro.body}
             </p>
+            <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <Button asChild size="lg">
+                <a
+                  href={site.applyHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Apply to Start a Chapter
+                </a>
+              </Button>
+              <Button asChild size="lg" variant="outline">
+                <a
+                  href={site.instagram.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ask us on Instagram
+                </a>
+              </Button>
+            </div>
           </Reveal>
-          <Reveal delay={0.1} className="mt-10">
-            <ChapterApplicationForm />
-          </Reveal>
-          <p className="mt-6 text-center text-sm text-muted-foreground">
-            Questions first?{" "}
-            <a
-              href={site.instagram.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-primary underline-offset-4 hover:underline"
-            >
-              Message us on Instagram
-            </a>
-          </p>
         </div>
       </section>
     </main>

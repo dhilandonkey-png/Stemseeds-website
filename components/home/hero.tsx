@@ -47,19 +47,19 @@ export function HomeHero() {
             width={720}
             height={720}
             priority
-            className="pointer-events-none absolute top-1/2 left-1/2 -z-10 w-[min(58vw,520px)] max-w-none -translate-x-1/2 -translate-y-1/2 opacity-[0.07] select-none"
+            className="pointer-events-none absolute top-1/2 left-1/2 -z-10 w-[min(48vw,420px)] max-w-none -translate-x-1/2 -translate-y-1/2 opacity-[0.07] select-none"
           />
           <h1 className="font-sans leading-[0.95] font-bold tracking-[-0.045em]">
             <CascadeText
               text={heroCopy.wordmark}
-              className="text-[clamp(3.5rem,12vw,10.5rem)]"
+              className="text-[clamp(3.25rem,9vw,7.25rem)]"
             />
           </h1>
         </div>
         <p className="mt-4 font-display text-xl text-foreground/90 sm:text-2xl md:mt-5 md:text-3xl">
           {heroCopy.tagline}
         </p>
-        <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+        <p className="mt-6 max-w-2xl text-lg leading-relaxed font-medium text-foreground/85 sm:text-xl">
           {heroCopy.body}
         </p>
         <div className="mt-9 flex w-full flex-col items-center gap-3 sm:w-auto sm:flex-row">
@@ -101,6 +101,9 @@ export function HomeHero() {
             </div>
           ))}
         </dl>
+        <p className="mt-4 text-xs text-muted-foreground">
+          As of {site.statsAsOf}
+        </p>
 
         <div className="relative mt-12 h-[320px] w-full max-w-md lg:hidden">
           <Floating sensitivity={reduceMotion ? 0 : 0.08} easingFactor={0.05}>

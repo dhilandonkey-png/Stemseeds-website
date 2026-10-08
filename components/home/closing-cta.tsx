@@ -24,7 +24,9 @@ export function ClosingCtaSection() {
             size="lg"
             className="bg-fresh text-fresh-deep hover:bg-fresh/85"
           >
-            <Link href={closingCta.primary.href}>{closingCta.primary.label}</Link>
+            <Link href={closingCta.primary.href}>
+              {closingCta.primary.label}
+            </Link>
           </Button>
           <Button
             asChild

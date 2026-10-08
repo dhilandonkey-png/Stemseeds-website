@@ -58,10 +58,7 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav
-          aria-label="Primary"
-          className="hidden items-center gap-1 lg:flex"
-        >
+        <nav aria-label="Primary" className="hidden items-center gap-1 lg:flex">
           {navigation.map((item) => {
             const active =
               item.href === "/"
