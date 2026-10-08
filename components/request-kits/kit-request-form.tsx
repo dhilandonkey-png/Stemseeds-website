@@ -8,6 +8,14 @@ import { site } from "@/content/site";
 
 type Status = "idle" | "sending" | "sent" | "error";
 
+/** Formats digits as 123-456-7890 while typing. */
+function formatPhone(value: string) {
+  const digits = value.replace(/\D/g, "").slice(0, 10);
+  if (digits.length <= 3) return digits;
+  if (digits.length <= 6) return `${digits.slice(0, 3)}-${digits.slice(3)}`;
+  return `${digits.slice(0, 3)}-${digits.slice(3, 6)}-${digits.slice(6)}`;
+}
+
 const inputClass =
   "mt-2 block w-full rounded-xl border border-input bg-card px-4 py-3 text-base text-foreground focus-visible:border-primary focus-visible:ring-2 focus-visible:ring-ring/40 focus-visible:outline-none";
 
@@ -166,13 +174,21 @@ export function KitRequestForm() {
             name="phone"
             type="tel"
             autoComplete="tel"
-            maxLength={40}
+            inputMode="tel"
+            maxLength={14}
+            pattern="\d{3}-\d{3}-\d{4}"
+            title="10-digit phone number, like 123-456-7890"
+            onChange={(event) => {
+              event.currentTarget.value = formatPhone(
+                event.currentTarget.value,
+              );
+            }}
             className={inputClass}
           />
         </Field>
-        <Field label="About how many children?" required>
+        <Field label="How many STEMKits? (1 kit per child)" required>
           <input
-            name="children"
+            name="kits"
             type="number"
             min={1}
             max={10000}
@@ -180,9 +196,6 @@ export function KitRequestForm() {
             inputMode="numeric"
             className={inputClass}
           />
-        </Field>
-        <Field label="Age range">
-          <input name="age_range" maxLength={60} className={inputClass} />
         </Field>
         <Field label="Preferred delivery date">
           <input name="preferred_date" type="date" className={inputClass} />
