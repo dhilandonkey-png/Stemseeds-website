@@ -4,6 +4,8 @@ export type TeamMember = {
   school?: string;
   state?: string;
   country: string;
+  /** Draws a divider line before this member's card on the Team page. */
+  dividerBefore?: boolean;
   /** Heading this member is grouped under on the Team page. Defaults to their school. */
   chapter?: string;
   bio: string;
@@ -144,6 +146,7 @@ const texas: TeamMember[] = [
   },
   {
     name: "Viren Bollu",
+    dividerBefore: true,
     role: "Chapter Co-President",
     school: "Centennial High School",
     state: "Texas",

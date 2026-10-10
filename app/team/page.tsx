@@ -74,7 +74,15 @@ function ChapterGroups({
             ) : (
               <div className={`mt-4 ${span.cards}`}>
                 {group.members.map((member, index) => (
-                  <Reveal key={member.name} delay={index * 0.05}>
+                  <Reveal
+                    key={member.name}
+                    delay={index * 0.05}
+                    className={
+                      member.dividerBefore
+                        ? "relative before:absolute before:-top-3 before:left-0 before:h-px before:w-full before:bg-primary/30 sm:before:top-0 sm:before:-left-3 sm:before:h-full sm:before:w-px"
+                        : undefined
+                    }
+                  >
                     <MemberCard member={member} />
                   </Reveal>
                 ))}
