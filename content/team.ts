@@ -135,18 +135,7 @@ const texas: TeamMember[] = [
     imageAlt: "Portrait of Aiza Jalal",
   },
   {
-    name: "Mekyle Alam",
-    role: "Chapter President",
-    school: "Centennial High School",
-    state: "Texas",
-    country: "United States",
-    bio: "Mekyle Alam is the president of the Centennial High School chapter. He's passionate about STEM and has leadership experience in rocketry competitions and hospital volunteering. He's also interested in business and enjoys exploring innovation at the intersection of STEM and entrepreneurship.",
-    image: "/images/team/mekylealam.avif",
-    imageAlt: "Portrait of Mekyle Alam",
-  },
-  {
     name: "Viren Bollu",
-    dividerBefore: true,
     role: "Chapter Co-President",
     school: "Centennial High School",
     state: "Texas",
