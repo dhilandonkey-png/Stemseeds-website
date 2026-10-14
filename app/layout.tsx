@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description:
-    "STEMSeeds is a student-led 501(c)(3) nonprofit from Frisco, Texas that builds hands-on STEM kits and delivers them free to children in hospitals and underserved communities. 945+ kits delivered by 32 chapters in 6 countries.",
+    "STEMSeeds is a student-led 501(c)(3) nonprofit from Frisco, Texas that builds hands-on STEM kits and delivers them free to children in hospitals and underserved communities. 1,005+ kits delivered by 32 chapters in 6 countries.",
   keywords: [
     "STEMSeeds",
     "STEM kits",

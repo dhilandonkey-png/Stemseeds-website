@@ -77,7 +77,7 @@ export default async function OpengraphImage() {
             color: "#0e4f31",
           }}
         >
-          945+ kits · 32 chapters · 6 countries
+          1,005+ kits · 32 chapters · 6 countries
         </div>
       </div>
       <img

@@ -4,7 +4,7 @@ export const whoWeAre = {
   intro:
     "STEMSeeds is a student-led 501(c)(3) nonprofit founded in Frisco, Texas. We design 3-in-1 STEMKits packed with hands-on experiments and deliver them to pediatric patients and underserved communities, so kids in difficult moments can feel like kids again.",
   facts: [
-    { value: "945+", label: "STEMKits delivered to hospitals and schools" },
+    { value: "1,005+", label: "STEMKits delivered to hospitals and schools" },
     { value: "32", label: "student-led chapters in 6 countries" },
     { value: "2", label: "city recognitions, from Frisco and Mansfield" },
   ],

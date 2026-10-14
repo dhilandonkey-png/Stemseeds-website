@@ -32,7 +32,7 @@ export const navigation = [
 ] as const;
 
 export const stats = [
-  { value: 945, suffix: "+", label: "Kits Delivered" },
+  { value: 1005, suffix: "+", label: "Kits Delivered" },
   { value: 32, suffix: "", label: "Active Chapters" },
   { value: 6, suffix: "", label: "Countries with Chapters" },
 ] as const;

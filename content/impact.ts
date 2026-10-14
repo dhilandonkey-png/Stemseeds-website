@@ -28,6 +28,29 @@ export const impactIntro = {
 /** Newest first. Add a new event by copying one block and filling it in. */
 export const impactEvents: ImpactEvent[] = [
   {
+    title: "Michigan Chapter Delivers 60+ Kits in Its Second Drop",
+    date: "October 2026",
+    location: "Detroit, Michigan",
+    recipient: "Children's Hospital of Michigan",
+    chapter: { name: "Michigan", teamId: "michigan-chapter-leadership" },
+    description:
+      "Our Michigan chapter completed its second kit drop, delivering more than 60 STEMKits to the Children's Hospital of Michigan. The team packed, loaded, and hand-delivered every box, and their next drop is already on the way.",
+    photos: [
+      {
+        src: "/images/impact/michigan-oct-3.avif",
+        alt: "A chapter member stacking STEMKit boxes onto a wheelchair outside the Children's Hospital of Michigan",
+      },
+      {
+        src: "/images/impact/michigan-oct-1.avif",
+        alt: "A chapter member carrying a large stack of sealed STEMKit boxes",
+      },
+      {
+        src: "/images/impact/michigan-oct-2.avif",
+        alt: "A chapter member loading STEMKit boxes into a car trunk",
+      },
+    ],
+  },
+  {
     title: "Argyle Chapter Delivers 100 Kits Across 6 Hospitals",
     date: "September 2026",
     location: "North Texas",
