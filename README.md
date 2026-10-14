@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# stemseeds.net
 
-## Getting Started
+The website for [STEMSeeds](https://www.stemseeds.net), a student-led 501(c)(3)
+that designs hands-on STEM kits and delivers them free to kids in hospitals and
+underserved communities. 1,005+ kits delivered by 32 chapters in 6 countries.
 
-First, run the development server:
+![The STEMSeeds home page: hero with floating delivery photos and live impact counters](docs/home.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## What the site does
+
+| Page | For | What's on it |
+|---|---|---|
+| **Home** | Everyone | Mission, impact counters, how a kit gets from a chapter to a hospital, partners, mayoral recognition |
+| **About / Team** | Families, partners | Founders, core team, and every chapter's leaders, grouped by U.S. state and country |
+| **Impact** | Donors, press | A timeline of every delivery and fundraiser, newest first, with photos |
+| **STEM Kit** | Kids, parents, teachers | The three experiments in each kit, with step-by-step build photos and printable flyers |
+| **Request Kits** | Hospitals, schools | A form that sends the request straight to our inbox |
+| **Join Us** | Students | How to start a chapter, plus an FAQ |
+| **Donate** | Donors | What each donation pays for |
+
+## How it's built
+
+- **Next.js (App Router), React 19, TypeScript and Tailwind CSS v4**, deployed on Vercel.
+- **Every page is static.** It's prerendered at build time, so pages load fast and
+  there's no server to maintain.
+- **Content is separate from layout.** All copy, stats, photos, team members and
+  impact events live in typed files in [`content/`](content/). Updating the site
+  (a new delivery, a new chapter, a new kit count) means editing data, not
+  components, and TypeScript catches a missing field before it ships.
+- **Kit requests without a backend.** The request form posts to FormSubmit, which
+  forwards it to the STEMSeeds inbox, and it falls back to a plain email link if
+  that fails. The phone field has a country picker covering every country with a
+  dialing code.
+- **SEO and sharing:** page metadata, a sitemap, `robots.txt`, and an Open Graph
+  image generated in code, so a shared link shows a STEMSeeds preview card with
+  the current impact numbers.
+- **Images** are AVIF where possible to keep pages light.
+- **Preview branch workflow:** changes go to a preview branch first, get checked
+  on its Vercel preview URL, and are merged to `main` (the live site) once
+  they look right.
+
+## Project structure
+
+```
+app/            one folder per page, plus metadata, sitemap and the OG image
+components/     page sections (home/, about/, impact/, ...) and shared ui/
+content/        all site copy and data: site.ts, home.ts, impact.ts, team.ts, kits.ts, ...
+public/images/  photos, kit build steps, partner logos
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Common updates
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **New delivery or event:** add an entry to the top of `impactEvents` in
+  [`content/impact.ts`](content/impact.ts) and drop its photos in
+  `public/images/impact/`.
+- **New kit count or chapter count:** edit `stats` in [`content/site.ts`](content/site.ts).
+- **New chapter or member:** edit [`content/team.ts`](content/team.ts).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Run it locally
 
-## Learn More
+Needs Node 20 or newer.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # production build
+npm run lint
+```
