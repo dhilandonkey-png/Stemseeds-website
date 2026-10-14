@@ -44,13 +44,7 @@ export default function AboutPage() {
                 <Link href="/team">Meet Our Team</Link>
               </Button>
               <Button asChild size="lg">
-                <a
-                  href={site.donateHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Donate Now
-                </a>
+                <Link href="/donate">Donate Now</Link>
               </Button>
             </div>
           </Reveal>

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { ExternalLink, Package } from "lucide-react";
+import { Mail, Package } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { donationImpact } from "@/content/donate";
@@ -100,13 +100,16 @@ export function DonationImpact() {
         </div>
 
         <Button asChild size="lg" className="mt-6 w-full">
-          <a href={site.donateHref} target="_blank" rel="noopener noreferrer">
-            Donate ${amount} on GoFundMe
-            <ExternalLink className="size-4" aria-hidden="true" />
+          <a
+            href={`mailto:${site.email}?subject=${encodeURIComponent(`Donating $${amount} to STEMSeeds`)}`}
+          >
+            Email us to donate ${amount}
+            <Mail className="size-4" aria-hidden="true" />
           </a>
         </Button>
         <p className="mt-3 text-center text-xs text-muted-foreground">
-          Enter your amount on GoFundMe. Every ${costPerKit} sends one more kit.
+          Online donations are coming soon. Until then, email us and we&apos;ll
+          help you give. Every ${costPerKit} sends one more kit.
         </p>
       </div>
 

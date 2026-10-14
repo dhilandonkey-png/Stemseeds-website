@@ -3,7 +3,7 @@ export const donateCopy = {
   title: "Support Our Cause",
   body: "We've inspired hundreds of young scientists, and with your help, we can inspire countless more! Your donation funds the distribution of more of our signature 3-in-1 STEMKits to disadvantaged children across the globe—making the joy of STEM accessible to all.",
   ctaLabel: "Donate Now",
-  note: "Donations are processed securely through our GoFundMe campaign. STEMSeeds is a 501(c)(3) nonprofit; for a receipt or our organizational details, email stem.seeds.org@gmail.com.",
+  note: "Online donations are coming soon. STEMSeeds is a 501(c)(3) nonprofit; to donate in the meantime, or for a receipt or our organizational details, email stem.seeds.org@gmail.com.",
   impactPoints: [
     {
       title: "Funds more STEMKits",

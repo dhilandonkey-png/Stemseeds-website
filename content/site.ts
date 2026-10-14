@@ -10,8 +10,6 @@ export const site = {
   },
   applyHref:
     "https://docs.google.com/forms/d/e/1FAIpQLScN6nRW2X84GEM7-O82CPEoxv8j3EBt0-WIJEweOy6tfe9wfA/viewform?usp=sharing",
-  donateHref:
-    "https://www.gofundme.com/f/stemseeds-help-sponsor-underprivileged-kids-with-stem-kits",
   email: "stem.seeds.org@gmail.com",
   /** When the stats below were last updated. */
   statsAsOf: "October 2026",
