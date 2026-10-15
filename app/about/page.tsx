@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/about" },
   title: "About",
   description:
-    "STEMSeeds is a student-founded 501(c)(3) nonprofit organization based in Frisco, Texas, led by Co-Founders Ritvik Avula and Rayhan Raja alongside a team of more than 50 students.",
+    "STEMSeeds is a student-founded 501(c)(3) nonprofit organization based in Frisco, Texas, led by CEO and Co-Founder Dhilan Avula and Co-Founders Ritvik Avula and Rayhan Raja alongside a team of more than 50 students.",
 };
 
 export default function AboutPage() {

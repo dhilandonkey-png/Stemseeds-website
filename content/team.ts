@@ -16,17 +16,27 @@ export type TeamMember = {
 export const aboutIntro = {
   eyebrow: "Who Are We",
   title: "Student-founded, mission-driven",
-  body: "STEMSeeds is a student-founded 501(c)(3) nonprofit organization based in Frisco, Texas. Our mission is to make STEM education accessible to every child, regardless of socioeconomic background or time spent in the hospital. For many of the children we serve, these moments of learning also offer a chance to step away from hospital routines and simply enjoy being curious, playful learners again. STEMSeeds is led by two Co-Founders, Ritvik Avula and Rayhan Raja, who work alongside a team of more than 50 students, each serving different roles but united by a shared purpose: supporting this mission and the children at its heart.",
+  body: "STEMSeeds is a student-founded 501(c)(3) nonprofit organization based in Frisco, Texas. Our mission is to make STEM education accessible to every child, regardless of socioeconomic background or time spent in the hospital. For many of the children we serve, these moments of learning also offer a chance to step away from hospital routines and simply enjoy being curious, playful learners again. STEMSeeds is led by CEO and Co-Founder Dhilan Avula and Co-Founders Ritvik Avula and Rayhan Raja, who work alongside a team of more than 50 students, each serving different roles but united by a shared purpose: supporting this mission and the children at its heart.",
 } as const;
 
 export const founders: TeamMember[] = [
   {
-    name: "Ritvik Avula",
-    role: "Co-Founder & CEO",
+    name: "Dhilan Avula",
+    role: "CEO, Co-Founder & Lead Software Engineer",
     school: "Reedy High School",
     state: "Texas",
     country: "United States",
-    bio: "Ritvik Avula is the Co-Founder and CEO of STEMSeeds. He is a Senior at Reedy High School and is passionate about spreading STEM education to the underserved. He works in a cancer research lab and does art in his free time!",
+    bio: "Dhilan Avula is the CEO, Co-Founder, and Lead Software Engineer of STEMSeeds. He focused on creating the design of the stem kits. He is a Sophomore at Reedy High School and enjoys tennis and STEM.",
+    image: "/images/team/dhilanavula.avif",
+    imageAlt: "Portrait of Dhilan Avula",
+  },
+  {
+    name: "Ritvik Avula",
+    role: "Co-Founder",
+    school: "Reedy High School",
+    state: "Texas",
+    country: "United States",
+    bio: "Ritvik Avula is a Co-Founder of STEMSeeds. He is a Senior at Reedy High School and is passionate about spreading STEM education to the underserved. He works in a cancer research lab and does art in his free time!",
     image: "/images/team/ritvikavula.avif",
     imageAlt: "Portrait of Ritvik Avula",
   },
@@ -60,16 +70,6 @@ export const coreTeam: TeamMember[] = [
     bio: "Rohan Balasupramanian is the Instagram Manager, using his passion for graphic design towards increasing STEMSeeds' visibility!",
     image: "/images/team/rohanbalasupramanian.avif",
     imageAlt: "Portrait of Rohan Balasupramanian",
-  },
-  {
-    name: "Dhilan Avula",
-    role: "Curriculum Director",
-    school: "Reedy High School",
-    state: "Texas",
-    country: "United States",
-    bio: "Dhilan Avula is the Curriculum Director of STEMSeeds. He focused on creating the design of the stem kits. He is a Sophomore at Reedy High School and enjoys tennis and STEM.",
-    image: "/images/team/dhilanavula.avif",
-    imageAlt: "Portrait of Dhilan Avula",
   },
 ];
 

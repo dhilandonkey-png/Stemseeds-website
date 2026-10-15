@@ -130,7 +130,7 @@ export default function TeamPage() {
           <Reveal>
             <SectionHeading eyebrow="Leadership" title="Founders" />
           </Reveal>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:max-w-4xl">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {founders.map((member, index) => (
               <Reveal key={member.name} delay={index * 0.08}>
                 <MemberCard member={member} />
