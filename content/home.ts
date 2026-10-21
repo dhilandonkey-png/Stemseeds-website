@@ -4,8 +4,8 @@ export const whoWeAre = {
   intro:
     "STEMSeeds is a student-led 501(c)(3) nonprofit founded in Frisco, Texas. We design 3-in-1 STEMKits packed with hands-on experiments and deliver them to pediatric patients and underserved communities, so kids in difficult moments can feel like kids again.",
   facts: [
-    { value: "1,005+", label: "STEMKits delivered to hospitals and schools" },
-    { value: "32", label: "student-led chapters in 6 countries" },
+    { value: "3", label: "hands-on experiments in every STEMKit" },
+    { value: "$5K+", label: "raised by student fundraisers and donors" },
     { value: "2", label: "city recognitions, from Frisco and Mansfield" },
   ],
   link: { label: "Read our full story", href: "/about#our-story" },
@@ -37,38 +37,38 @@ export const ourStory = {
   paragraphs: [
     "STEMSeeds designs and packages custom 3-in-1 STEM activity kits called STEMKits, each containing multiple hands-on experiments that let children explore scientific concepts through building, testing, and play.",
     "What matters most to us is helping kids feel like kids again. For children facing long or difficult hospital stays, our STEMKits offer a sense of normalcy, curiosity, and joy during moments that are often stressful or isolating.",
-    "Founded by high school students in Frisco, Texas, STEMSeeds has distributed more than 1,000 STEMKits and raised more than $4K, funded by generous donors and student-run fundraisers like our volleyball and pickleball tournaments. Our kits have reached children across the DFW Metroplex and Michigan, as well as in India, Bangladesh, Sweden, and Canada.",
+    "Founded by high school students in Frisco, Texas, STEMSeeds has distributed more than 1,000 STEMKits and raised more than $5K, funded by generous donors and student-run fundraisers like our volleyball and pickleball tournaments. Our kits have reached children across the DFW Metroplex and Michigan, as well as in India, Bangladesh, Sweden, and Canada.",
     "Today we have chapters in six countries: the United States, Canada, India, Bangladesh, Sweden, and the Philippines. A new chapter is being developed in China, so we can keep reminding children that learning and creativity do not stop, even in the hardest moments.",
   ],
 } as const;
 
 export const howItWorks = {
   eyebrow: "How It Works",
-  title: "From our hands to theirs",
+  title: "How a delivery happens",
   steps: [
     {
       number: "01",
-      title: "Design",
-      icon: "design",
-      text: "Our team designs custom 3-in-1 STEMKits, each packed with hands-on experiments.",
+      title: "Fund",
+      icon: "fund",
+      text: "Chapters raise money for supplies through donations and student-run events like pickleball and volleyball tournaments.",
     },
     {
       number: "02",
-      title: "Build",
+      title: "Assemble",
       icon: "build",
-      text: "Kits are hand-assembled and carefully packaged with hospital-safe, latex-free materials.",
+      text: "Students hand-pack each kit with three experiments, latex-free materials, and printed step-by-step instructions.",
     },
     {
       number: "03",
-      title: "Deliver",
-      icon: "deliver",
-      text: "Chapters deliver kits to pediatric patients and underserved communities, across the DFW Metroplex and around the world.",
+      title: "Coordinate",
+      icon: "coordinate",
+      text: "The chapter contacts a nearby hospital or school to confirm how many kits they need and schedule a drop-off.",
     },
     {
       number: "04",
-      title: "Inspire",
-      icon: "inspire",
-      text: "Children explore scientific concepts through building, testing, and play.",
+      title: "Deliver",
+      icon: "deliver",
+      text: "Students bring the kits in person, and hospital staff pass them on to the children they care for.",
     },
   ],
 } as const;
@@ -137,7 +137,7 @@ export const sponsorsSection = {
 export const recognitionSection = {
   eyebrow: "Mayoral Recognition",
   title: "Recognized by the mayors of Frisco and Mansfield",
-  body: "STEMSeeds has been formally recognized by city leadership for its commitment to thoughtful, student-led community impact. Our work was honored with certificates of recognition from the mayors of Frisco and Mansfield, acknowledging the care, intention, and consistency behind our service efforts. These recognitions reflect not just the scale of our outreach, but the genuine impact our programs have had on children and families within the community. Being acknowledged by local leaders reaffirmed our belief that meaningful change can begin with students who lead with purpose and empathy.",
+  body: "In September 2025, the City of Frisco awarded STEMSeeds a Certificate of Recognition for our kit deliveries across the city, made possible by our Frisco ISD chapters. In December 2025, the City of Mansfield recognized the work of our Mansfield ECHS chapter.",
   images: [
     {
       src: "/images/recognition/mayoralrecognition2.avif",

@@ -3,7 +3,7 @@ import type { FloatingPhotoSpec } from "@/components/ui/floating-photo";
 export const heroCopy = {
   wordmark: "STEMSeeds",
   tagline: "Where Learning Takes Root",
-  body: "A student-led nonprofit organization bringing hands-on STEM education to children of all backgrounds, including pediatric patients and underserved communities.",
+  body: "Free, hands-on STEM kits for kids in hospitals and underserved communities, built and delivered by high school students.",
   primaryCta: { label: "Start a Chapter", href: "/join-us" },
   secondaryCta: { label: "Donate", href: "/donate" },
 } as const;

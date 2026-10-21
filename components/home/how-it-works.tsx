@@ -1,14 +1,14 @@
-import { Package, PenTool, Sparkles, Truck } from "lucide-react";
+import { CalendarCheck, HandCoins, Package, Truck } from "lucide-react";
 
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { howItWorks } from "@/content/home";
 
 const stepIcons = {
-  design: PenTool,
+  fund: HandCoins,
   build: Package,
+  coordinate: CalendarCheck,
   deliver: Truck,
-  inspire: Sparkles,
 } as const;
 
 export function HowItWorksSection() {
