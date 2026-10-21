@@ -70,6 +70,36 @@ export const impactEvents: ImpactEvent[] = [
     ],
   },
   {
+    title: "Michigan Chapter Pickleball Tournament Raises $300+",
+    date: "August 9, 2026",
+    location: "Novi, Michigan",
+    chapter: { name: "Michigan", teamId: "michigan-chapter-leadership" },
+    description:
+      "Our Michigan chapter hosted a pickleball tournament and raised more than $300, with 100% of proceeds going directly toward STEMKits for children in hospitals. Congratulations to Team Sleepy for taking first place and to the Eyebangers for finishing as runner-up, and thank you to everyone who came out to play, support, and cheer. More tournaments are on the way.",
+    photos: [
+      {
+        src: "/images/impact/pickleball-mi-1.avif",
+        alt: "A large group of players and volunteers posing together on the pickleball court",
+      },
+      {
+        src: "/images/impact/pickleball-mi-2.avif",
+        alt: "Four players holding pickleball paddles on the court",
+      },
+      {
+        src: "/images/impact/pickleball-mi-3.avif",
+        alt: "Volunteers smiling around the check-in table beside the courts",
+      },
+      {
+        src: "/images/impact/pickleball-mi-4.avif",
+        alt: "Three volunteers smiling in the park next to the courts",
+      },
+      {
+        src: "/images/impact/pickleball-mi-5.avif",
+        alt: "Three players sitting together beside the courts",
+      },
+    ],
+  },
+  {
     title: "Reedy High School Delivers 50 Kits to Cook Children's",
     date: "July 17, 2026",
     location: "Fort Worth, Texas",

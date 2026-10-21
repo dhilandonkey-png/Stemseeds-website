@@ -37,7 +37,7 @@ export const ourStory = {
   paragraphs: [
     "STEMSeeds designs and packages custom 3-in-1 STEM activity kits called STEMKits, each containing multiple hands-on experiments that let children explore scientific concepts through building, testing, and play.",
     "What matters most to us is helping kids feel like kids again. For children facing long or difficult hospital stays, our STEMKits offer a sense of normalcy, curiosity, and joy during moments that are often stressful or isolating.",
-    "Founded by high school students in Frisco, Texas, STEMSeeds has distributed more than 900 STEMKits and raised more than $4K, funded by generous donors and student-run fundraisers like our volleyball and pickleball tournaments. Our kits have reached children across the DFW Metroplex and Michigan, as well as in India, Bangladesh, Sweden, and Canada.",
+    "Founded by high school students in Frisco, Texas, STEMSeeds has distributed more than 1,000 STEMKits and raised more than $4K, funded by generous donors and student-run fundraisers like our volleyball and pickleball tournaments. Our kits have reached children across the DFW Metroplex and Michigan, as well as in India, Bangladesh, Sweden, and Canada.",
     "Today we have chapters in six countries: the United States, Canada, India, Bangladesh, Sweden, and the Philippines. A new chapter is being developed in China, so we can keep reminding children that learning and creativity do not stop, even in the hardest moments.",
   ],
 } as const;
