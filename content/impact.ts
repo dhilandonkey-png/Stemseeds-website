@@ -34,7 +34,7 @@ export const impactEvents: ImpactEvent[] = [
     recipient: "FaithAction International House",
     chapter: {
       name: "The STEM Early College at NC A&T SU",
-      teamId: "the-stem-early-college-at-nc-and-t-su",
+      teamId: "the-stem-early-college-at-nc-aandt-su",
     },
     description:
       "Our Greensboro chapter completed its very first kit drop, delivering more than 30 handcrafted STEMKits to FaithAction International House, an immigrant assistance program in the local community. Every box was hand-packed by the team, and they can't wait to see what the kids create.",
