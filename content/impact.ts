@@ -28,6 +28,24 @@ export const impactIntro = {
 /** Newest first. Add a new event by copying one block and filling it in. */
 export const impactEvents: ImpactEvent[] = [
   {
+    title: "Singularity Robotics Delivers Kits to Cook Children's Prosper",
+    date: "October 21, 2026",
+    location: "Prosper, Texas",
+    recipient: "Cook Children's Medical Center, Prosper",
+    description:
+      "Our partner Singularity Robotics, FRC Team 10032, completed its first STEMSeeds kit drop, delivering STEMKits to Cook Children's Medical Center in Prosper. Every box was sealed with both teams' tape, marking the first delivery from our partnership.",
+    photos: [
+      {
+        src: "/images/impact/singularity-cook-1.avif",
+        alt: "Four Singularity Robotics members holding STEMKit boxes sealed with STEMSeeds and Singularity tape",
+      },
+      {
+        src: "/images/impact/singularity-cook-2.avif",
+        alt: "A pile of STEMKit boxes sealed with alternating STEMSeeds and Singularity tape",
+      },
+    ],
+  },
+  {
     title: "Michigan Chapter Delivers 60+ Kits in Its Second Drop",
     date: "October 2026",
     location: "Detroit, Michigan",
