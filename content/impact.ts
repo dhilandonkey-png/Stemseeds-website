@@ -28,12 +28,38 @@ export const impactIntro = {
 /** Newest first. Add a new event by copying one block and filling it in. */
 export const impactEvents: ImpactEvent[] = [
   {
-    title: "Singularity Robotics Delivers Kits to Cook Children's Prosper",
+    title: "Greensboro Chapter Delivers 30+ Kits to FaithAction",
+    date: "October 30, 2026",
+    location: "Greensboro, North Carolina",
+    recipient: "FaithAction International House",
+    chapter: {
+      name: "The STEM Early College at NC A&T SU",
+      teamId: "the-stem-early-college-at-nc-and-t-su",
+    },
+    description:
+      "Our Greensboro chapter completed its very first kit drop, delivering more than 30 handcrafted STEMKits to FaithAction International House, an immigrant assistance program in the local community. Every box was hand-packed by the team, and they can't wait to see what the kids create.",
+    photos: [
+      {
+        src: "/images/impact/greensboro-1.avif",
+        alt: "A Greensboro chapter member and two FaithAction staff members smiling with STEMKit boxes",
+      },
+      {
+        src: "/images/impact/greensboro-2.avif",
+        alt: "A car trunk full of STEMKit boxes labeled with STEMSeeds tape and FaithAction stickers",
+      },
+      {
+        src: "/images/impact/greensboro-3.avif",
+        alt: "A FaithAction staff member moving STEMKits from a car trunk into a wagon",
+      },
+    ],
+  },
+  {
+    title: "Singularity Robotics Delivers 50 Kits to Cook Children's Prosper",
     date: "October 21, 2026",
     location: "Prosper, Texas",
     recipient: "Cook Children's Medical Center, Prosper",
     description:
-      "Our partner Singularity Robotics, FRC Team 10032, completed its first STEMSeeds kit drop, delivering STEMKits to Cook Children's Medical Center in Prosper. Every box was sealed with both teams' tape, marking the first delivery from our partnership.",
+      "Our partner Singularity Robotics, FRC Team 10032, completed its first STEMSeeds kit drop, delivering 50 STEMKits to Cook Children's Medical Center in Prosper. Every box was sealed with both teams' tape, marking the first delivery from our partnership.",
     photos: [
       {
         src: "/images/impact/singularity-cook-1.avif",
