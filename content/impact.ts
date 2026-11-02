@@ -47,7 +47,7 @@ export const impactEvents: ImpactEvent[] = [
   },
   {
     title: "Michigan Chapter Delivers 60+ Kits in Its Second Drop",
-    date: "October 2026",
+    date: "October 13, 2026",
     location: "Detroit, Michigan",
     recipient: "Children's Hospital of Michigan",
     chapter: { name: "Michigan", teamId: "michigan-chapter-leadership" },
@@ -63,8 +63,16 @@ export const impactEvents: ImpactEvent[] = [
         alt: "A chapter member carrying a large stack of sealed STEMKit boxes",
       },
       {
+        src: "/images/impact/michigan-oct-4.avif",
+        alt: "A chapter member stacking sealed STEMKit boxes on a driveway",
+      },
+      {
         src: "/images/impact/michigan-oct-2.avif",
         alt: "A chapter member loading STEMKit boxes into a car trunk",
+      },
+      {
+        src: "/images/impact/michigan-oct-5.avif",
+        alt: "Two chapter members driving the STEMKits to the hospital",
       },
     ],
   },
