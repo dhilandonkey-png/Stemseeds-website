@@ -309,7 +309,13 @@ export default function StemKitPage() {
               size="lg"
               className="bg-fresh text-fresh-deep hover:bg-fresh/85"
             >
-              <Link href="/donate">Sponsor the next kit</Link>
+              <a
+                href={site.donateHref}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Sponsor the next kit
+              </a>
             </Button>
             <Button
               asChild

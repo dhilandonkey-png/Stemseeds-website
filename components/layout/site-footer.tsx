@@ -73,12 +73,14 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
-              <Link
-                href="/donate"
+              <a
+                href={site.donateHref}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-sm text-mint/90 transition-colors hover:text-fresh"
               >
-                Donate
-              </Link>
+                Donate on GoFundMe
+              </a>
             </li>
             <li>
               <a
