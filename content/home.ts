@@ -95,7 +95,7 @@ export const galleryPhotos = [
 export const partnersSection = {
   eyebrow: "Our Partners",
   title: "Our partners",
-  lead: "Hospitals, schools, and organizations that have received STEMKits from our chapters."
+  lead: "Hospitals, schools, and organizations that have received STEMKits from our chapters.",
   logos: [
     { src: "/images/partners/partner1.avif", alt: "Children's Health" },
     {
