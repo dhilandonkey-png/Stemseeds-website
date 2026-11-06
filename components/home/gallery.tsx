@@ -10,7 +10,7 @@ export function GallerySection() {
         <Reveal>
           <SectionHeading
             eyebrow="Our Impact"
-            title="Moments where learning takes root"
+            title="Photos from our deliveries"
             align="center"
           />
         </Reveal>

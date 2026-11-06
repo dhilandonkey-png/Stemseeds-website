@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Globe2, Package, Sparkles } from "lucide-react";
 
 import { DonationImpact } from "@/components/donate/donation-impact";
 import { AnimatedCounter } from "@/components/ui/animated-counter";
@@ -15,7 +14,6 @@ export const metadata: Metadata = {
     "Support STEMSeeds: your donation funds the distribution of our signature 3-in-1 STEMKits to disadvantaged children across the globe.",
 };
 
-const impactIcons = [Package, Globe2, Sparkles] as const;
 
 export default function DonatePage() {
   return (
@@ -27,11 +25,6 @@ export default function DonatePage() {
         />
         <div className="relative mx-auto max-w-2xl text-center">
           <Reveal>
-            <p className="flex items-center justify-center gap-2.5 text-xs font-semibold tracking-[0.22em] text-primary uppercase">
-              <span aria-hidden="true" className="h-px w-6 bg-fresh" />
-              {donateCopy.eyebrow}
-              <span aria-hidden="true" className="h-px w-6 bg-fresh" />
-            </p>
             <h1 className="mt-4 font-display text-4xl leading-[1.08] text-foreground sm:text-5xl md:text-6xl">
               {donateCopy.title}
             </h1>
@@ -67,30 +60,6 @@ export default function DonatePage() {
         </div>
       </section>
 
-      <section className="bg-mint/50 px-6 py-16 sm:py-20">
-        <div className="mx-auto max-w-5xl">
-          <div className="grid gap-6 sm:grid-cols-3">
-            {donateCopy.impactPoints.map((point, index) => {
-              const Icon = impactIcons[index] ?? Sparkles;
-              return (
-                <Reveal key={point.title} delay={index * 0.08}>
-                  <article className="flex h-full flex-col rounded-2xl border border-border bg-card p-6 shadow-[0_8px_24px_rgba(8,62,72,0.06)]">
-                    <span className="flex size-11 items-center justify-center rounded-xl bg-primary text-primary-foreground">
-                      <Icon className="size-5" aria-hidden="true" />
-                    </span>
-                    <h2 className="mt-4 font-display text-lg text-foreground">
-                      {point.title}
-                    </h2>
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                      {point.text}
-                    </p>
-                  </article>
-                </Reveal>
-              );
-            })}
-          </div>
-        </div>
-      </section>
 
       <section className="px-6 py-16 sm:py-20">
         <Reveal className="mx-auto max-w-4xl">

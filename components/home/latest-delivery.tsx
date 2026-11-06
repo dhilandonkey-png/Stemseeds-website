@@ -28,10 +28,6 @@ export function LatestDeliverySection() {
           />
         </div>
         <div className="px-6 pb-8 lg:px-10 lg:py-10">
-          <p className="flex items-center gap-2.5 text-xs font-semibold tracking-[0.22em] text-primary uppercase">
-            <span aria-hidden="true" className="h-px w-6 bg-fresh" />
-            Latest Delivery
-          </p>
           <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-xs font-semibold tracking-[0.16em] text-primary uppercase">
             {latest.date ? (
               <span className="inline-flex items-center gap-1.5">

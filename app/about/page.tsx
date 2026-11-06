@@ -28,11 +28,6 @@ export default function AboutPage() {
         />
         <div className="relative mx-auto max-w-3xl text-center">
           <Reveal>
-            <p className="flex items-center justify-center gap-2.5 text-xs font-semibold tracking-[0.22em] text-primary uppercase">
-              <span aria-hidden="true" className="h-px w-6 bg-fresh" />
-              {aboutIntro.eyebrow}
-              <span aria-hidden="true" className="h-px w-6 bg-fresh" />
-            </p>
             <h1 className="mt-4 font-display text-4xl leading-[1.08] text-foreground sm:text-5xl md:text-6xl">
               {aboutIntro.title}
             </h1>

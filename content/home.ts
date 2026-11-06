@@ -33,7 +33,7 @@ export const whoWeAre = {
 
 export const ourStory = {
   eyebrow: "Our Story",
-  title: "From a small local idea to a global initiative",
+  title: "Our story",
   paragraphs: [
     "STEMSeeds designs and packages custom 3-in-1 STEM activity kits called STEMKits, each containing multiple hands-on experiments that let children explore scientific concepts through building, testing, and play.",
     "What matters most to us is helping kids feel like kids again. For children facing long or difficult hospital stays, our STEMKits offer a sense of normalcy, curiosity, and joy during moments that are often stressful or isolating.",
@@ -94,8 +94,8 @@ export const galleryPhotos = [
 
 export const partnersSection = {
   eyebrow: "Our Partners",
-  title: "Bringing science within reach for every child",
-  lead: "At STEMSeeds, we proudly partner with hospitals, nonprofits, schools, and community organizations that share our vision of bringing science within reach for every child. Through these collaborations, we've helped hundreds of young learners rediscover joy, curiosity, and confidence, giving them moments to laugh, explore, and feel like kids again beyond the IVs and monitors.",
+  title: "Our partners",
+  lead: "Hospitals, schools, and organizations that have received STEMKits from our chapters."
   logos: [
     { src: "/images/partners/partner1.avif", alt: "Children's Health" },
     {
@@ -120,16 +120,16 @@ export const partnersSection = {
 
 export const sponsorsSection = {
   eyebrow: "Our Sponsors",
-  title: "The support behind every kit",
-  lead: "Our sponsors make this work possible. Their support directly funds STEMKits, expands our reach, and ensures that more children can experience moments of joy, curiosity, and learning when they need it most.",
+  title: "Our sponsors",
+  lead: "These businesses help pay for STEMKit supplies.",
   logos: [
     {
       src: "/images/sponsors/sponsor1.avif",
-      alt: "SIROCo — Technology for Smarter Life",
+      alt: "SIROCo: Technology for Smarter Life",
     },
     {
       src: "/images/sponsors/sponsor2.avif",
-      alt: "Palm India — The Authentic South Indian Food Experience",
+      alt: "Palm India: The Authentic South Indian Food Experience",
     },
   ],
 } as const;

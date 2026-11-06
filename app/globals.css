@@ -30,7 +30,7 @@
   --border: rgba(13, 95, 102, 0.16);
   --input: rgba(13, 95, 102, 0.22);
   --ring: var(--sea);
-  --radius: 0.9rem;
+  --radius: 0.625rem;
 }
 
 @theme inline {

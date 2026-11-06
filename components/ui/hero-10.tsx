@@ -95,7 +95,7 @@ export function Hero10({
                 <br />
                 {titleLine2Prefix ? `${titleLine2Prefix} ` : null}
                 {titleHighlight ? (
-                  <em className="text-primary italic">{titleHighlight}</em>
+                  <span className="text-primary">{titleHighlight}</span>
                 ) : null}
               </>
             )}

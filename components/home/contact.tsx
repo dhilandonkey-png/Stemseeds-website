@@ -16,7 +16,7 @@ export function ContactSection() {
         <Reveal>
           <SectionHeading
             eyebrow="Contact Us"
-            title="Say hello"
+            title="Contact us"
             lead="Questions about kits, chapters, donations, or partnerships? Email us or message us on Instagram and our team will get back to you."
           />
         </Reveal>

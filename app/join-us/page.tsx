@@ -44,8 +44,8 @@ export default function JoinUsPage() {
       <Hero10
         headingAs="h1"
         title="Start a Chapter."
-        titleLine2Prefix="Help grow"
-        titleHighlight="the future of STEM"
+        titleLine2Prefix="Bring kits"
+        titleHighlight="to kids near you"
         description={joinIntro.question}
         images={joinFanImages.map((image) => image.src)}
         imageAlts={joinFanImages.map((image) => image.alt)}
@@ -163,11 +163,6 @@ export default function JoinUsPage() {
       <section className="bg-aqua/35 px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-3xl text-center">
           <Reveal>
-            <p className="flex items-center justify-center gap-2.5 text-xs font-semibold tracking-[0.22em] text-primary uppercase">
-              <span aria-hidden="true" className="h-px w-6 bg-fresh" />
-              Chapter Enrollment
-              <span aria-hidden="true" className="h-px w-6 bg-fresh" />
-            </p>
             <h2 className="mt-4 font-display text-3xl text-foreground sm:text-4xl">
               {joinCta.title}
             </h2>

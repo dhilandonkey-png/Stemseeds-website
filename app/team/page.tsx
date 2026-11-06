@@ -105,11 +105,6 @@ export default function TeamPage() {
         />
         <div className="relative mx-auto max-w-3xl text-center">
           <Reveal>
-            <p className="flex items-center justify-center gap-2.5 text-xs font-semibold tracking-[0.22em] text-primary uppercase">
-              <span aria-hidden="true" className="h-px w-6 bg-fresh" />
-              Our Team
-              <span aria-hidden="true" className="h-px w-6 bg-fresh" />
-            </p>
             <h1 className="mt-4 font-display text-4xl leading-[1.08] text-foreground sm:text-5xl md:text-6xl">
               The students behind STEMSeeds
             </h1>
@@ -143,7 +138,7 @@ export default function TeamPage() {
       <section className="bg-mint/50 px-6 py-16 sm:py-20">
         <div className="mx-auto max-w-6xl">
           <Reveal>
-            <SectionHeading eyebrow="Core Team" title="Outreach" />
+            <SectionHeading title="Core Team" />
           </Reveal>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {coreTeam.map((member, index) => (

@@ -242,7 +242,7 @@ export const impactEvents: ImpactEvent[] = [
     title: "STEMSeeds Partners with Singularity Robotics",
     date: "June 16, 2026",
     description:
-      "STEMSeeds announced a new partnership with Singularity Robotics, FRC Team 10032, joining forces to create a more unified and impactful change in the community. Together, the teams launched a GoFundMe to kickstart the collaboration, and Singularity is now planning its own upcoming STEMSeeds kit drop.",
+      "STEMSeeds announced a new partnership with Singularity Robotics, FRC Team 10032, to run kit drives together. The teams launched a joint GoFundMe to fund the first drives, and Singularity is now planning its own upcoming STEMSeeds kit drop.",
     photos: [
       {
         src: "/images/impact/singularity-partnership.avif",
@@ -646,7 +646,7 @@ export const impactEvents: ImpactEvent[] = [
     location: "Frisco, Texas",
     recipient: "Cook Children's Pediatrics & Scottish Rite for Children",
     description:
-      "Special thanks to Cook Children's and Scottish Rite for Children for partnering with us to deliver a combined total of 50 STEMKits. This opportunity was truly a blessing, allowing us to further inspire STEM across the community.",
+      "Special thanks to Cook Children's and Scottish Rite for Children for partnering with us to deliver a combined total of 50 STEMKits. The kits went to young patients at both locations.",
     photos: [
       {
         src: "/images/impact/cook-scottish-1.avif",

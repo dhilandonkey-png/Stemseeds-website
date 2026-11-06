@@ -1,13 +1,13 @@
 import { cn } from "@/lib/utils";
 
 export function SectionHeading({
-  eyebrow,
   title,
   lead,
   align = "left",
   dark = false,
   className,
 }: {
+  /** Kept so existing callers compile; no longer shown. */
   eyebrow?: string;
   title: string;
   lead?: string;
@@ -23,24 +23,9 @@ export function SectionHeading({
         className,
       )}
     >
-      {eyebrow ? (
-        <p
-          className={cn(
-            "flex items-center gap-2.5 text-xs font-semibold tracking-[0.22em] uppercase",
-            align === "center" && "justify-center",
-            dark ? "text-aqua" : "text-primary",
-          )}
-        >
-          <span aria-hidden="true" className="h-px w-6 bg-fresh" />
-          {eyebrow}
-          {align === "center" ? (
-            <span aria-hidden="true" className="h-px w-6 bg-fresh" />
-          ) : null}
-        </p>
-      ) : null}
       <h2
         className={cn(
-          "mt-3 font-display text-3xl leading-tight sm:text-4xl md:text-[2.75rem]",
+          "font-display text-3xl leading-tight sm:text-4xl md:text-[2.75rem]",
           dark ? "text-mint" : "text-foreground",
         )}
       >

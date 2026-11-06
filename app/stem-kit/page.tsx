@@ -174,7 +174,7 @@ export default function StemKitPage() {
           <Reveal>
             <SectionHeading
               eyebrow="Educational Flyers"
-              title="The science behind every build"
+              title="Science flyers"
               lead="Each experiment includes an easy-to-follow educational flyer, personally designed by our team, that explains the science behind the activity."
               align="center"
             />
@@ -253,7 +253,7 @@ export default function StemKitPage() {
           <Reveal>
             <SectionHeading
               eyebrow="Kits Around the World"
-              title="Translated, packed, and delivered"
+              title="Kits around the world"
               lead={kitReach}
             />
           </Reveal>

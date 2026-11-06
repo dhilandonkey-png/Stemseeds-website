@@ -1,6 +1,6 @@
 export const joinIntro = {
-  question: "Interested in making a difference through STEM education?",
-  body: "By starting a STEMSeeds chapter, you'll join a network of passionate students dedicated to bringing hands-on STEM learning to underprivileged communities and hospitalized children. As a chapter leader, you'll receive step-by-step guidance on creating and distributing STEM kits, access to exclusive resources, and support from the STEMSeeds community. Enroll today and help us grow the future of STEM!",
+  question: "Want to run kit drives at your school?",
+  body: "A STEMSeeds chapter is a group of students who fund, pack, and deliver STEMKits to a hospital or school near them. We send you the kit design, the instruction manual, the science flyers, and a guide to your first delivery. Most chapters start with one or two students."
 } as const;
 
 export const joinSteps = [
@@ -26,7 +26,7 @@ export const joinSteps = [
     number: "04",
     title: "Build Your Chapter",
     icon: "build",
-    text: "Rally passionate students at your school around the mission.",
+    text: "Recruit a few classmates to help with fundraising and packing.",
   },
   {
     number: "05",
@@ -36,9 +36,9 @@ export const joinSteps = [
   },
   {
     number: "06",
-    title: "Make an Impact",
+    title: "Deliver",
     icon: "impact",
-    text: "Deliver kits to underprivileged communities and hospitalized children.",
+    text: "Bring the kits to a local hospital or school, in person."
   },
 ] as const;
 
@@ -78,8 +78,8 @@ export const joinFanImages = [
 ] as const;
 
 export const joinCta = {
-  title: "Make a Difference. Start a Chapter.",
-  body: "Enroll today and help us grow the future of STEM!",
+  title: "Start a chapter at your school",
+  body: "Applying is free and takes about five minutes."
 } as const;
 
 export const chapterNetwork = {

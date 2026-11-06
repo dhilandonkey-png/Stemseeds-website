@@ -23,10 +23,6 @@ export function KitHero() {
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-6 pt-16 pb-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:pt-20 lg:pb-24">
         {/* Text column */}
         <div className="max-w-xl">
-          <p className="flex items-center gap-2.5 text-xs font-semibold tracking-[0.22em] text-primary uppercase">
-            <span aria-hidden="true" className="h-px w-6 bg-fresh" />
-            {kitIntro.eyebrow}
-          </p>
           <h1 className="mt-4 font-display text-4xl leading-[1.05] text-foreground sm:text-5xl md:text-6xl">
             {kitIntro.title}
           </h1>

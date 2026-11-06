@@ -33,7 +33,7 @@ export function DonationImpact() {
               onClick={() => setAmount(preset)}
               aria-pressed={amount === preset}
               className={cn(
-                "rounded-full border px-4 py-2 text-sm font-semibold tabular-nums transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none",
+                "rounded-md border px-4 py-2 text-sm font-semibold tabular-nums transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none",
                 amount === preset
                   ? "border-primary bg-primary text-primary-foreground"
                   : "border-primary/20 text-foreground hover:border-primary/40 hover:bg-primary/5",
