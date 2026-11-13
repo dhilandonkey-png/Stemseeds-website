@@ -64,10 +64,10 @@ export const coreTeam: TeamMember[] = [
   },
   {
     name: "Meghana Nemalikanti",
-    role: "Outreach Leader",
+    role: "Head of Outreach",
     state: "Texas",
     country: "United States",
-    bio: "Meghana Nemalikanti is an Outreach Leader at STEMSeeds. She is passionate about business, leadership, and expanding access to educational opportunities for underserved communities. She also serves as a Texas DECA State Officer and is a varsity tennis captain at her high school. Through STEMSeeds, she hopes to inspire curiosity and make STEM education more accessible to children around the world.",
+    bio: "Meghana Nemalikanti is the Head of Outreach at STEMSeeds. She is passionate about business, leadership, and expanding access to educational opportunities for underserved communities. She also serves as a Texas DECA State Officer and is a varsity tennis captain at her high school. Through STEMSeeds, she hopes to inspire curiosity and make STEM education more accessible to children around the world.",
     image: "/images/team/meghananemalikanti.avif",
     imageAlt: "Portrait of Meghana Nemalikanti",
   },
